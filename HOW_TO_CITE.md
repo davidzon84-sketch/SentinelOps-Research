@@ -1,4 +1,4 @@
-# How to Cite CEB v1
+# Citation Reference — CEB v1
 
 **Artifact:** Controlled Evaluation Boundary (CEB v1)  
 **Version:** 1.0-CEB  
@@ -50,7 +50,7 @@
   version      = {1.0-CEB},
   howpublished = {Research documentation artifact},
   publisher    = {SentinelOps Research},
-  note         = {Conceptual governance model; not executable software. Tag v1.0-CEB, commit 30261dd.},
+  note         = {Axiomatic governance model; conceptual framework only. Tag v1.0-CEB, commit 30261dd.},
   doi          = {10.5281/zenodo.XXXXXXX},
   url          = {https://github.com/[org]/SentinelOps-Research},
   license      = {CC-BY-4.0}
@@ -61,7 +61,7 @@
 
 ## CFF Type Rationale
 
-`CITATION.cff` declares `type: software` because the [Citation File Format](https://citation-file-format.github.io/) and GitHub’s native citation feature are optimized for repository-level software metadata. CEB v1 is **not executable software**; it is a conceptual governance model and research documentation artifact. The CFF `abstract` field and this guide clarify that distinction for indexers and reviewers.
+`CITATION.cff` declares `type: software` because the [Citation File Format](https://citation-file-format.github.io/) and GitHub’s native citation feature are optimized for repository-level metadata. CEB v1 is **not executable software**; it is an axiomatic governance model and research documentation artifact. The CFF `abstract` field and this guide clarify that distinction for indexers and reviewers.
 
 For Zenodo deposit, select **Documentation / Other** (or equivalent non-code category) rather than a software release. The CFF `software` type supports GitHub discoverability without implying runnable artifacts.
 
@@ -83,4 +83,10 @@ Place or reference [`CITATION.cff`](./CITATION.cff) at the repository root. GitH
 
 ---
 
-_HOW_TO_CITE.md — CEB v1 Citation Guide — 2026-06-30_
+## Explicit Non-Claims
+
+This citation package references a **conceptual governance model**. It does not represent executable software, compliance certification, breach-prevention guarantees, or product implementation disclosure.
+
+---
+
+_HOW_TO_CITE.md — CEB v1 Citation Reference — 2026-06-30_

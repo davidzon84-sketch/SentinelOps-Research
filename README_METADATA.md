@@ -10,7 +10,7 @@
 
 **Controlled Evaluation Boundary (CEB v1): A Governance Model for Execution Control in Autonomous Systems**
 
-*Alternate (governance emphasis):* Controlled Evaluation Boundary: A Governance-First Model for When Systems Become Validly Executable
+*Alternate (governance emphasis):* Controlled Evaluation Boundary: An Axiomatic Model for When Systems Become Validly Executable
 
 ---
 
@@ -44,13 +44,13 @@ https://creativecommons.org/licenses/by/4.0/
 
 ## Short Description (Zenodo ~200 characters)
 
-Governance-first conceptual model for execution control in autonomous systems. Defines when build/delivery is validly authorized; treats non-execution as a preferred security outcome under boundary separation.
+Axiomatic governance model for execution control in autonomous systems. Defines authorized states and transition rules; establishes non-execution as a valid security outcome under boundary separation.
 
 ---
 
 ## Extended Description
 
-The Controlled Evaluation Boundary (CEB v1) is a research-grade architectural governance model for governing state transitions from design to execution or external delivery. It addresses supply-chain uncertainty, incomplete review scope, and intellectual-property boundaries that prohibit conventional code sharing. CEB documents authorization states, open-question gates, fail-closed semantics, clean-room boundary principles, and audit-evidence templates. The artifact is implementation-agnostic, non-executable, and suitable for external academic and program review. It does not certify compliance, disclose product implementation, or constitute deployable software.
+The Controlled Evaluation Boundary (CEB v1) is a research-grade axiomatic governance model defining authorized program states, transition rules, and accountability predicates for research externalization. It addresses supply-chain uncertainty, incomplete review scope, and intellectual-property boundaries that prohibit conventional disclosure. CEB declares authorization states, open-question gates, fail-closed semantics, clean-room boundary invariants, and audit-evidence schema templates. The artifact is implementation-agnostic, non-executable, and suitable for external academic and program review. It does not certify compliance, disclose product implementation, or constitute deployable software.
 
 ---
 
@@ -106,9 +106,9 @@ The Controlled Evaluation Boundary (CEB v1) is a research-grade architectural go
 ## Citation Files
 
 | File | Purpose |
-|------|---------|
+|------|------|
 | [`CITATION.cff`](./CITATION.cff) | CFF 1.2.0 — GitHub auto-citation |
-| [`HOW_TO_CITE.md`](./HOW_TO_CITE.md) | Human-readable citation guide (APA, BibTeX) |
+| [`HOW_TO_CITE.md`](./HOW_TO_CITE.md) | Human-readable citation reference (APA, BibTeX) |
 | [`ABSTRACT_OPTIMIZED.md`](./ABSTRACT_OPTIMIZED.md) | IEEE/ACM-style abstract (≤250 words) |
 | [`04_METADATA_ZENODO/ZENODO_ABSTRACT.md`](./04_METADATA_ZENODO/ZENODO_ABSTRACT.md) | Zenodo deposit abstract (operational) |
 
@@ -116,7 +116,7 @@ The Controlled Evaluation Boundary (CEB v1) is a research-grade architectural go
 
 ## Explicit Non-Claims
 
-This metadata describes a **conceptual governance model**. It does not represent executable software, compliance certification, breach-prevention guarantees, or product implementation disclosure.
+This metadata describes an **axiomatic governance model**. It does not represent executable software, compliance certification, breach-prevention guarantees, or product implementation disclosure.
 
 ---
 

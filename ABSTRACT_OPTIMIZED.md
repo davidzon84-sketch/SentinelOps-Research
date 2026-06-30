@@ -7,14 +7,14 @@
 
 ---
 
-Modern organizations operate across complex software supply chains in which the transition from design to execution or external delivery is often treated as progress by default. When security assumptions degrade, review scope remains incomplete, or intellectual-property boundaries prohibit conventional code sharing, the imperative to build, package, and ship can increase exposure rather than reduce it. This work presents the **Controlled Evaluation Boundary (CEB)**, a governance-first conceptual model for external research review under explicit boundary separation.
+Supply-chain uncertainty, incomplete review scope, and intellectual-property boundaries challenge the assumption that design-to-delivery transitions represent unconditional progress. When security postures degrade, premature execution or external delivery can increase exposure rather than reduce it.
 
-CEB reframes execution control as a first-class systems problem. The decision to assemble, compile, or deliver artifacts to external evaluators is modeled as a security-sensitive state transition demanding documented authorization, separable integrity evidence, and accountable human judgment—not implicit velocity. Authorization is expressed through explicit states, open-question gates, and fail-closed transition semantics: transitions that cannot be justified by current evidence are withheld rather than approximated.
+This work presents the **Controlled Evaluation Boundary (CEB v1)**, an axiomatic governance model specifying authorized program states, transition rules, and accountability predicates for research externalization under explicit boundary separation. Execution control is formalized as a first-class systems invariant: transitions toward build-validated or delivery-approved states require documented authorization, separable integrity evidence, and accountable human judgment—not implicit velocity.
 
-A central contribution is the formal recognition that **non-execution**—the deliberate withholding of build or delivery when preconditions are unmet—is a valid and often preferred security outcome, not a program failure. This posture supports clean-room boundary separation between private development and evaluation perimeters, enabling research-grade architectural review without disclosing proprietary implementation.
+A central axiom holds that **non-execution**—the deliberate withholding of build or delivery while gating preconditions remain unsatisfied—is a valid and often preferred security outcome within blocking states such as REQUIRES_DESIGN_DECISION, not a program failure. Open-question gates and fail-closed semantics prohibit invalid state advances when evidentiary justification is absent.
 
-The artifact documents governance structures, audit-evidence schemas, and boundary ingress policies at the research level. It is not deployable software, does not certify compliance, and does not prescribe operational automation. The model offers systems researchers and program reviewers a reproducible pattern for governing when shared artifacts may become validly executable under adversarial and supply-chain uncertainty.
+The artifact declares governance structures, audit-evidence schema invariants, and boundary ingress rules at the research level. It is a conceptual framework only: non-executable, non-certifying, and implementation-agnostic. CEB v1 establishes reproducible conditions under which shared research artifacts may become validly executable or deliverable to external evaluators amid adversarial and supply-chain uncertainty.
 
 ---
 
-**Word count:** 247
+**Word count:** 193
