@@ -36,7 +36,7 @@ Autonomous systems increasingly require evidential grounding for trust decisions
 | Unauthorized delivery | SRO sign-off required; gate â‰  approval |
 | Scope creep | REQUIRES_DESIGN_DECISION blocking state |
 | Supply-chain ambiguity | SHA256 manifest + BUILD_RECORD trace chain |
-| Legacy artifact reuse | v1.22.0 explicitly blocked; new identity line |
+| Legacy artifact reuse | Legacy blocked artifacts explicitly excluded; frozen identity line |
 
 Microsoft Research relevance: parallels trustworthy computing release governance, SLSA provenance separation, and fail-closed authorization in autonomous agent systems â€” applied to research externalization under IP constraints.
 

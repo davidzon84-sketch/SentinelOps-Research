@@ -1,9 +1,9 @@
 ﻿# Publication Readiness Report
 
 **Repository:** SentinelOps-Research (CEB v1 public mirror)  
+**Publication version:** v1.0-CEB-RELEASE  
 **Date:** 2026-06-30  
-**Prior commit:** `b200a8b`  
-**Artifact class:** Research / governance documentation — **not a software release**
+**Artifact class:** Frozen research snapshot — non-executable governance model
 
 ---
 
@@ -19,6 +19,9 @@
 | `05_EXECUTIVE_SUMMARY/` | PASS |
 | `README.md` | PASS |
 | Root `LICENSE` | PASS |
+| `PUBLICATION_READINESS_REPORT.md` | PASS |
+| `INTEGRITY_VERIFICATION_REPORT.md` | PASS |
+| `PUBLICATION_FINAL_REPORT.md` | PASS |
 
 No new implementation directories were added.
 
@@ -28,13 +31,13 @@ No new implementation directories were added.
 
 | Action | Scope |
 |--------|--------|
-| Operational paths → abstract references | All `.md` (internal release archives, implementation trees, host paths) |
-| Script / automation identifiers removed | Audit evidence schemas, future-work notes |
+| Operational paths → abstract references | All `.md` |
+| Script / automation identifiers removed | Audit evidence schemas, research notes |
 | Ingress route tables → category model | `03_CLEAN_ROOM_PIPELINE/WHITELIST_POLICY.md` |
-| Phase runbooks → governance milestones | `PHASE_1.md`, `PHASE_2_PENDING.md` |
-| SARP layer matrix → governance evaluation framework | `01_RESEARCH_PAPER/ARCHITECTURE.md` |
-| README repositioned | Not deployable; academic/architectural purpose |
-| Integrity report paths neutralized | `INTEGRITY_VERIFICATION_REPORT.md` |
+| Phase records → governance milestones | `PHASE_1.md`, `PHASE_2_PENDING.md` |
+| Trust-fabric implementation matrix → governance evaluation framework | `01_RESEARCH_PAPER/ARCHITECTURE.md` |
+| README repositioned | Not deployable; frozen publication artifact |
+| Version identity unified | `v1.0-CEB` / `v1.0-CEB-RELEASE` |
 
 **Sanitization gate:** **PASS**
 
@@ -46,22 +49,25 @@ No new implementation directories were added.
 |----------|---------|
 | Root `LICENSE` | **CC BY 4.0** |
 | `04_METADATA_ZENODO/LICENSE.md` | **CC BY 4.0** |
+| `04_METADATA_ZENODO/ZENODO_ABSTRACT.md` | **CC BY 4.0** |
+| `05_EXECUTIVE_SUMMARY/EXECUTIVE_PITCH_DECK.md` | **CC BY 4.0** |
 | `README.md` | References CC BY 4.0 |
 
-**License gate:** **PASS** (single license family)
+**License gate:** **PASS** (single license — no mixing)
 
 ---
 
 ## 4. Security scan
 
-Patterns: `token`, `secret`, `password`, `api_key`, `localhost`, `C:\Users`, absolute internal paths.
+Patterns: credentials, `localhost`, absolute internal paths, internal drive letters.
 
 | Result | Notes |
 |--------|-------|
 | No credentials | PASS |
-| No `.py` tool names | PASS |
-| No `localhost` literals (post-hardening) | PASS |
+| No operational script names | PASS |
+| No `localhost` literals in publication docs | PASS |
 | Lexical `secret`/`password` in governance denylist text | Triaged false positives |
+| No `BY-NC` license references | PASS |
 
 **Security gate:** **PASS**
 
@@ -69,18 +75,18 @@ Patterns: `token`, `secret`, `password`, `api_key`, `localhost`, `C:\Users`, abs
 
 ## 5. IP exposure risk classification
 
-**LOW** — Documentation states control boundaries, state machine, and research limitations only. No algorithms, pseudocode, pipelines, or reconstruction-enabling operational logic remain in scope.
+**LOW** — Documentation states control boundaries, state machine, and research limitations only. No algorithms, pseudocode, operational pipelines, or reconstruction-enabling logic remain in scope.
 
 ---
 
 ## 6. Publication decision
 
-`
+```
 PUBLICATION_READY = TRUE
-`
+```
 
-All gates passed. Repository is suitable for public GitHub and Zenodo deposit as a **research artifact**.
+All gates passed. Repository is suitable for public GitHub and Zenodo deposit as **FINAL_STATE = v1.0-CEB-RELEASE**.
 
 ---
 
-_Security Release Engineer — publication hardening gate_
+_Security Release Engineer — publication freeze gate — 2026-06-30_

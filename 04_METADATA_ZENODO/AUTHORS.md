@@ -36,7 +36,7 @@ David Baldizon is the sole designated Security Release Owner (OQ-2 closed 2026-0
 
 ```
 Baldizon, D. (2026). Sovereign Trust Fabric and the Controlled Evaluation Boundary: 
-A Governance-First Model for External Research Review (partner-eval-1.0.0). 
+A Governance-First Model for External Research Review (v1.0-CEB-RELEASE). 
 SentriOps CEB v1 Documentation Package.
 ```
 

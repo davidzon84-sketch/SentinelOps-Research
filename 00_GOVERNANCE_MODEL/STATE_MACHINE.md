@@ -96,7 +96,7 @@ A first-class blocking state indicating that automated or operational progress m
 |----------|--------|
 | Remain blocked indefinitely | **Yes** |
 | Execute recursive repo copy | **No — prohibited** |
-| Ship legacy v1.22.0 artifact | **No — prohibited** |
+| Ship legacy blocked artifact | **No — prohibited** |
 | Document research-only package | **Yes** |
 | Request SRO decision on OQs | **Yes — required** |
 

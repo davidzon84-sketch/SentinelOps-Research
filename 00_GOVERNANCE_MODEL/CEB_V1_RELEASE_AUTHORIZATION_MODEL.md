@@ -15,16 +15,17 @@
 
 The CEB v1 Release Authorization Model translates design decisions D-1 through D-5 into verifiable authorization requirements. It establishes controls for integrity, provenance, and human decision authority without claiming absolute security of any artifact.
 
-### Provisional Release Identity (OQ-1 OPEN)
+### Frozen Publication Identity (v1.0-CEB-RELEASE)
 
-| Field | Proposed value |
-|-------|----------------|
-| Human name | SentriOps Partner Evaluation v1.0 |
-| Semantic version | `partner-eval-1.0.0` |
-| Release ID format | `SOPS-PARTNER-EVAL-YYYY-MM-DD-vN` |
-| Target ZIP name | `SentriOps_Partner_Evaluation_partner-eval-1.0.0.zip` |
+| Field | Value |
+|-------|-------|
+| Human name | SentinelOps CEB v1.0 Governance Architecture |
+| Publication version | `v1.0-CEB-RELEASE` |
+| Short version | `v1.0-CEB` |
+| Release ID format | `SOPS-CEB-RELEASE-YYYY-MM-DD-vN` |
+| Target archive name | `SentriOps_CEB_v1.0-CEB-RELEASE.zip` |
 
-Identity fields are **provisional** until OQ-1 closes.
+Identity fields are **frozen** in this publication snapshot. OQ-1 documents research-level enumeration gates.
 
 ---
 

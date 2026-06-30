@@ -2,7 +2,7 @@
 
 **Field:** Version / Release Identity  
 **Date:** 2026-06-30  
-**Status:** Provisional â€” OQ-1 OPEN
+**Status:** Frozen research snapshot — **v1.0-CEB-RELEASE**
 
 ---
 
@@ -10,21 +10,22 @@
 
 | Field | Value |
 |-------|-------|
-| **Human name** | SentriOps Partner Evaluation v1.0 *(provisional)* |
-| **Semantic version** | `partner-eval-1.0.0` |
-| **Release ID** | `SOPS-PARTNER-EVAL-2026-06-30-v1` |
+| **Human name** | SentinelOps CEB v1.0 Governance Architecture |
+| **Publication version** | `v1.0-CEB-RELEASE` |
+| **Short version** | `v1.0-CEB` |
+| **Release ID** | `SOPS-CEB-RELEASE-2026-06-30-v1` |
 | **CEB boundary version** | v1 (**CLOSED**) |
-| **Scope option** | A â€” Pure Documentation/Research Review |
+| **Scope** | Option A — Pure Documentation/Research Review (non-executable) |
 
 ---
 
 ## Version Policy
 
-- `v1.0` = first controlled external evaluation line under CEB v1
-- **Discontinuous** with legacy `v1.22.0` (blocked artifact)
-- Subsequent deliveries increment Release ID suffix (`-v2`, `-v3`) independently of semantic version
+- `v1.0-CEB` = first frozen publication line under CEB v1 governance model
+- **Discontinuous** with legacy blocked product artifacts (not republished)
+- Subsequent deposits increment Release ID suffix (`-v2`, `-v3`) independently of semantic version
 - Never reuse hashes or identity from prior blocked releases
-- Zenodo version increments align with semantic version upon deposit
+- Zenodo version field binds to `v1.0-CEB-RELEASE` for this deposit
 
 ---
 
@@ -32,43 +33,49 @@
 
 | Channel | Version binding |
 |---------|-------------------|
-| **Zenodo** | `partner-eval-1.0.0` in metadata; immutable snapshot |
-| **GitHub** | Tag `partner-eval-1.0.0`; living governance trace |
-| **Coherence** | Zenodo deposit references Git commit SHA in BUILD_RECORD |
+| **Zenodo** | `v1.0-CEB-RELEASE` in metadata; immutable frozen snapshot |
+| **GitHub** | Tag `v1.0-CEB`; governance reference trace |
+| **Coherence** | Zenodo deposit references Git commit SHA in deposit notes |
 
 ---
 
-## Related Research Versions
+## Related Research Versions (Context Only)
 
 | Component | Version | Status |
 |-----------|---------|--------|
-| extended governance evaluation model (theoretical) | v1.0 | Frozen 2026-06-29 |
-| STF Paper | 1.0 | Frozen |
-| internal sandbox review (not published) empirical scope | SHA `50969f5` | Formal closure (separate from CEB package) |
-| EXTERNAL_AUDIT_PACKAGE | Externalization v1 | Public research docs |
+| Sovereign Trust Fabric (theoretical) | v1.0 | Frozen 2026-06-29 — not executable in this artifact |
+| STF Paper | 1.0 | Frozen — research framing only |
+| External audit package | Externalization v1 | Public research docs (abstract references) |
 
 ---
 
 ## Zenodo Version Field
 
 ```
-version = "partner-eval-1.0.0"
+version = "v1.0-CEB-RELEASE"
 ```
 
 ---
 
-## Current Program State at This Version
+## GitHub Tag
 
 ```
-CEB_V1_CYCLE          = CLOSED
-OPERATIONAL_STATES    = AUTHORIZATION_READY_FOR_BUILD + REQUIRES_DESIGN_DECISION
-PHASE_1               = EXECUTED
-V2_REVIEW             = COMPLETED
-WHITELIST             = PENDING
-DELIVERY              = NOT AUTHORIZED
-OPEN_OQ               = 4 (OQ-1, OQ-3, OQ-4, OQ-5)
+v1.0-CEB
 ```
 
 ---
 
-_VERSION.md â€” Zenodo Metadata â€” CEB v1 â€” 2026-06-30_
+## Frozen Publication State
+
+```
+FINAL_STATE           = v1.0-CEB-RELEASE
+ARTIFACT_CLASS        = non-executable governance model
+PUBLICATION_POSTURE   = frozen research snapshot
+CEB_V1_CYCLE          = CLOSED (governance model)
+DELIVERY              = NOT AUTHORIZED (by design)
+OPEN_OQ               = documented at research level (OQ-1..OQ-5)
+```
+
+---
+
+_VERSION.md — Zenodo Metadata — CEB v1 — v1.0-CEB-RELEASE — 2026-06-30_

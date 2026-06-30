@@ -1,8 +1,9 @@
 ﻿# Limitations
 
-**Document:** CEB v1 Research Paper â€” Declared Limitations  
+**Document:** CEB v1 Research Paper — Declared Limitations  
+**Publication version:** v1.0-CEB-RELEASE (frozen research snapshot)  
 **Date:** 2026-06-30  
-**Sources:** EXTERNAL_AUDIT_PACKAGE/04_LIMITATIONS.md, research disclaimer document (category), CEB governance model
+**Sources:** external audit package (category), research disclaimer document (category), CEB governance model
 
 ---
 
@@ -12,21 +13,21 @@
 
 ---
 
-## 1. STF / SARP Limitations
+## 1. Trust Fabric Research Limitations
 
 ### Does NOT Claim
 
-1. **Absolute invulnerability** â€” models degradation response, not impossibility of attack.
-2. **Regulatory certification** â€” does not substitute SOC 2, Common Criteria, FedRAMP, or ISO 27001.
-3. **Superiority over Zero Trust, SLSA, TPM/TEE** â€” complementary positioning only.
-4. **Resistance to total adversary control** â€” root + pipeline + keys + runtime simultaneously compromised.
-5. **Autonomous self-sufficient identity** â€” requires external distinguisher (AAT axiom).
-6. **Ontological truth** â€” `Provenance.complete âŠ„ Reality.true`.
-7. **Substitution of human governance** â€” SRO approval remains mandatory for CEB delivery.
-8. **Implicit intent measurement** â€” AVI operates on declared intent only.
-9. **Certifiable TD(t)/IIS(t) metrics** â€” experimental constructs.
-10. **300 internal sandbox review (not published) tests validate extended governance evaluation model (theoretical)** â€” separate scopes explicitly documented.
-11. **Autonomous recovery after total trust collapse** â€” ANCR requires external evidence.
+1. **Absolute invulnerability** — models degradation response, not impossibility of attack.
+2. **Regulatory certification** — does not substitute SOC 2, Common Criteria, FedRAMP, or ISO 27001.
+3. **Superiority over Zero Trust, SLSA, TPM/TEE** — complementary positioning only.
+4. **Resistance to total adversary control** — root compromise across keys and runtime simultaneously.
+5. **Autonomous self-sufficient identity** — requires external distinguisher (AAT axiom).
+6. **Ontological truth** — `Provenance.complete ⊄ Reality.true`.
+7. **Substitution of human governance** — SRO approval remains mandatory for CEB delivery.
+8. **Implicit intent measurement** — AVI operates on declared intent only.
+9. **Certifiable TD(t)/IIS(t) metrics** — experimental constructs.
+10. **Sandbox empirical scope validates extended governance evaluation model (theoretical)** — separate scopes explicitly documented.
+11. **Autonomous recovery after total trust collapse** — ANCR requires external evidence.
 
 ---
 
@@ -34,16 +35,15 @@
 
 | Limitation | Description |
 |------------|-------------|
-| **No productive code** | Evaluators cannot inspect backend, frontend, or proprietary trust-layer implementation implementation |
-| **Option A only (v1.0)** | No functional binaries; CLI G6 documented but not shipped |
-| **No plugins** | Zero extensibility surface in v1.0 package |
-| **Manifests pending** | integrity/ artifacts not generated â€” valid under non-execution posture |
-| **Whitelist pending** | 26 routes proposed; not finalized (OQ-1 OPEN) |
-| **V2 review completed** | Criteria frozen; artifact verification pending build |
-| **Gate not executed** | structural validation gate (conceptual) not yet run on assembled package |
-| **V2 audit pending** | Adversarial checklist not yet completed for this assembly |
-| **Delivery not authorized** | OQ-3, OQ-4, OQ-5 open; no SRO delivery sign-off |
-| **Signature optional** | Provenance layer may be absent if OQ-4 unresolved |
+| **No productive code** | Evaluators cannot inspect proprietary implementation |
+| **Option A only (v1.0)** | No functional binaries in frozen snapshot |
+| **No plugins** | Zero extensibility surface in publication artifact |
+| **Manifest templates only** | integrity/ schemas documented; live manifests not generated — valid non-execution posture |
+| **Category model frozen** | Ingress categories defined; per-item enumeration gates documented at research level (OQ-1) |
+| **Adversarial review criteria frozen** | V2 criteria documented; artifact verification not applicable to non-executable snapshot |
+| **Structural validation gate** | Conceptual gate documented; not run on documentation-only artifact |
+| **Delivery not authorized** | OQ-3, OQ-4, OQ-5 documented; no delivery sign-off in frozen snapshot |
+| **Signature optional** | Provenance layer may be absent per governance model |
 
 ---
 
@@ -52,7 +52,7 @@
 1. Clean-room assembly does not prove absence of vulnerabilities in unreleased code.
 2. Two JSON schemas copied from proprietary trust-layer implementation (not disclosed) are declarative only; no validator implementation included.
 3. Secret scan uses lexical patterns; semantic secret embedding not exhaustively excluded.
-4. Phase 1.1 report documents assembly on single host; multi-host reproducibility not yet verified.
+4. Assembly report documents single-host context; multi-host reproducibility not claimed.
 
 ---
 
@@ -60,10 +60,10 @@
 
 | Scope | Limitation |
 |-------|------------|
-| internal sandbox review (not published) (300 tests) | In-memory sandbox; not production deployment |
-| extended governance evaluation model (theoretical) v1.0 | Theoretical freeze; external review pending |
-| Phase 1.1 assembly | Documental only; no runtime evaluation harness included |
-| EXTERNAL_AUDIT_PACKAGE | Documentary organization; no new empirical evidence |
+| Sandbox empirical scope | In-memory sandbox; not production deployment |
+| extended governance evaluation model (theoretical) v1.0 | Theoretical freeze; external review at research level |
+| Phase 1 boundary documentation | Documental only; no runtime evaluation harness included |
+| External audit package | Documentary organization; no new empirical evidence |
 
 ---
 
@@ -99,8 +99,8 @@ External evaluators **cannot** from this package alone:
 
 ## 7. Non-Delivery as Limitation Acknowledgment
 
-The current posture (CEB v1 CLOSED; concurrent `AUTHORIZATION_READY_FOR_BUILD` + `REQUIRES_DESIGN_DECISION`; no ZIP, no delivery) is an **honest limitation disclosure**: the governance model permits external review of architecture and research framing without implying product readiness.
+The frozen **v1.0-CEB publication artifact** (CEB v1 CLOSED; concurrent `AUTHORIZATION_READY_FOR_BUILD` + `REQUIRES_DESIGN_DECISION`; no delivery) is an **honest limitation disclosure**: the governance model permits external review of architecture and research framing without implying product readiness.
 
 ---
 
-_LIMITATIONS.md â€” CEB v1 â€” 2026-06-30_
+_LIMITATIONS.md — CEB v1 — v1.0-CEB-RELEASE — 2026-06-30_

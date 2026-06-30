@@ -20,20 +20,20 @@ Design decisions D-1 through D-5 translate pre-release readiness findings into v
 
 ### D-1 â€” Release Identity
 
-| Field | Proposed value (pending OQ-1) |
+| Field | Frozen value (v1.0-CEB-RELEASE) |
 |-------|-------------------------------|
-| Human name | SentriOps Partner Evaluation v1.0 |
-| Product line | SentriOps Partner Evaluation |
-| Semantic version | `partner-eval-1.0.0` |
-| Release ID format | `SOPS-PARTNER-EVAL-YYYY-MM-DD-vN` |
-| Target ZIP name | `SentriOps_Partner_Evaluation_partner-eval-1.0.0.zip` |
-| `integrity/VERSION` | `partner-eval-1.0.0` |
+| Human name | SentinelOps CEB v1.0 Governance Architecture |
+| Product line | SentinelOps CEB Governance |
+| Publication version | `v1.0-CEB-RELEASE` |
+| Release ID format | `SOPS-CEB-RELEASE-YYYY-MM-DD-vN` |
+| Target archive name | `SentriOps_CEB_v1.0-CEB-RELEASE.zip` |
+| `integrity/VERSION` | `v1.0-CEB-RELEASE` |
 
-**Rationale.** Discontinuity with legacy `v1.22.0` requires an unambiguous identity. "Evaluation" communicates limited scope without implying certification or live-data operation.
+**Rationale.** Discontinuity with legacy blocked artifacts requires an unambiguous frozen publication identity. This artifact is a non-executable governance model.
 
-**OQ-1 status:** **OPEN** â€” supersession of "Demo" / `partner-eval-2.0.0` nomenclature requires explicit SRO confirmation before manifest generation.
+**OQ-1 status:** Documented at research level — enumeration gates for ingress categories.
 
-**Superseded sources:** `PARTNER_RELEASE_IDENTITY.md` (`partner-eval-2.0.0`, "Demo" naming); `PARTNER_VERSION_POLICY.md` Â§5 (`SentriOps_Partner_Demo_<version>.zip`).
+**Superseded nomenclature:** Prior "Demo" and partner-evaluation naming lines are discontinued in favor of `v1.0-CEB-RELEASE`.
 
 ---
 
@@ -48,7 +48,7 @@ Design decisions D-1 through D-5 translate pre-release readiness findings into v
 | `integrity/` | Yes | Manifests and hashes; no private keys |
 | `application/` | Conditional | Placeholder only under Option A |
 
-**Private (never crosses boundary):** proprietary server implementation (not disclosed), proprietary client implementation (not disclosed), proprietary trust-layer implementation (not disclosed) (source tree); unpublished research archives; secrets; dev toolchain; internal governance; legacy `v1.22.0` artifact; forensic workspace origin.
+**Private (never crosses boundary):** proprietary server implementation (not disclosed), proprietary client implementation (not disclosed), proprietary trust-layer implementation (not disclosed) (source tree); unpublished research archives; secrets; dev toolchain; internal governance; legacy blocked artifacts; forensic workspace origin.
 
 **Out of scope:** Regulatory certification; SIEM/EDR/WAF replacement; dev infrastructure access; IP transfer; undeclared telemetry; external targeting.
 

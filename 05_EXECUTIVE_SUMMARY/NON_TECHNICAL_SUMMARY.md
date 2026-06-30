@@ -107,7 +107,7 @@ SentriOps Partner Evaluation v1.0 demonstrates **governance-first research shari
 
 **Security Release Owner:** David Baldizon  
 **Project:** SentinelOps OS  
-**Release line:** SentriOps Partner Evaluation v1.0 (`partner-eval-1.0.0`)
+**Publication version:** v1.0-CEB-RELEASE (frozen research snapshot)
 
 ---
 

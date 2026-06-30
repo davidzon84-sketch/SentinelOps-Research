@@ -25,8 +25,8 @@ The BUILD_RECORD is **not** a substitute for:
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `build_id` | string | Yes | Unique build execution identifier |
-| `release_id` | string | Yes | Format: `SOPS-PARTNER-EVAL-YYYY-MM-DD-vN` |
-| `version` | semver | Yes | Must be `partner-eval-1.0.0` for CEB v1.0 line |
+| `release_id` | string | Yes | Format: `SOPS-CEB-RELEASE-YYYY-MM-DD-vN` |
+| `version` | semver | Yes | Must be `v1.0-CEB-RELEASE` for CEB v1.0 line |
 | `zip_target_name` | string | Conditional | Required if ZIP generated |
 | `scope_option` | enum | Yes | `A` (documental) or `B` (binaries) |
 | `status` | enum | Yes | `PENDING`, `IN_PROGRESS`, `COMPLETE` |
@@ -155,7 +155,7 @@ Incomplete BUILD_RECORD blocks transition to `BUILD_VALIDATED`.
 
 | Field | Value (2026-06-30) |
 |-------|-------------------|
-| `release_id` | `SOPS-PARTNER-EVAL-2026-06-30-v1` |
+| `release_id` | `SOPS-CEB-RELEASE-2026-06-30-v1` |
 | `scope_option` | A |
 | `files_copied` | 26 |
 | `files_missing` | 0 |

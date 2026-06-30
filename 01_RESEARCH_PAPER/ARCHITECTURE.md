@@ -102,7 +102,7 @@ Categories:
 
 Phase 1 workspace: isolated temp directory, recreated (wipe + mkdir), outside dev repo tree.
 
-Phase 1 **executed** with 6 contractual skeleton files. Proposed 26-route whitelist **pending** SRO finalization. Sanitization PASS; secret scan PASS on skeleton scope.
+Phase 1 boundary preparation is **documented** at research level with contractual skeleton categories. Ingress category model is **frozen** in this snapshot; enumeration gates remain documented open questions (OQ-1).
 
 ---
 
@@ -148,7 +148,7 @@ Transition to `APPROVED_FOR_DELIVERY` requires:
 ## 7. Package Structure (Option A)
 
 ```
-SentriOps_Partner_Evaluation_partner-eval-1.0.0/
+SentriOps_CEB_v1.0-CEB-RELEASE/
 â”œâ”€â”€ README_FIRST
 â”œâ”€â”€ LICENSE
 â”œâ”€â”€ application/README.md          (placeholder â€” no binaries)

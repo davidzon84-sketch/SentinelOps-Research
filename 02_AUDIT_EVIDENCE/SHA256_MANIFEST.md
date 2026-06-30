@@ -59,8 +59,8 @@ Phase 1 executed with 6 skeleton files. Proposed 26-route whitelist pending fina
 
 ```json
 {
-  "release_id": "SOPS-PARTNER-EVAL-2026-06-30-v1",
-  "version": "partner-eval-1.0.0",
+  "release_id": "SOPS-CEB-RELEASE-2026-06-30-v1",
+  "version": "v1.0-CEB-RELEASE",
   "generated_at_utc": "2026-06-30T00:00:00Z",
   "scope_option": "A",
   "files": [
@@ -92,9 +92,9 @@ Phase 1 executed with 6 skeleton files. Proposed 26-route whitelist pending fina
 
 ```json
 {
-  "release_id": "SOPS-PARTNER-EVAL-2026-06-30-v1",
-  "version": "partner-eval-1.0.0",
-  "artifact_name": "SentriOps_Partner_Evaluation_partner-eval-1.0.0.zip",
+  "release_id": "SOPS-CEB-RELEASE-2026-06-30-v1",
+  "version": "v1.0-CEB-RELEASE",
+  "artifact_name": "SentriOps_CEB_v1.0-CEB-RELEASE.zip",
   "zip_sha256": "[hex — post ZIP generation]",
   "packaged_at_utc": "[ISO 8601]",
   "security_status": "pending",
@@ -118,7 +118,7 @@ Phase 1 executed with 6 skeleton files. Proposed 26-route whitelist pending fina
 Single line, no trailing whitespace:
 
 ```
-partner-eval-1.0.0
+v1.0-CEB-RELEASE
 ```
 
 ---

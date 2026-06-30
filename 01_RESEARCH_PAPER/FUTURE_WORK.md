@@ -74,7 +74,7 @@ The following are **out of scope** for CEB v1 future work:
 - Public release of proprietary server implementation/proprietary client implementation/proprietary trust-layer implementation source
 - Offensive security tooling or external scanning automation
 - Compliance certification claims
-- Legacy v1.22.0 artifact rehabilitation
+- Legacy blocked artifact rehabilitation (explicitly excluded)
 - Plugin premium/backend inclusion without independent V2-G audit
 
 ---

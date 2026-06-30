@@ -41,7 +41,7 @@ OQ gates operate **upstream** of automated and adversarial gates. Unresolved OQ 
 
 | ID | Question | Blocks | Priority | Default if unresolved |
 |----|----------|--------|----------|----------------------|
-| **OQ-1** | Supersede "Demo" / `partner-eval-2.0.0` with SentriOps Partner Evaluation v1.0 / `partner-eval-1.0.0`? | Identity alignment; manifest generation; whitelist finalization | **High** | Remain in `REQUIRES_DESIGN_DECISION` |
+| **OQ-1** | Confirm frozen publication identity `v1.0-CEB-RELEASE` for Zenodo/GitHub deposit? | Identity alignment; manifest templates; ingress enumeration gates | **High** | Documented at research level |
 | **OQ-3** | Does David Baldizon confirm Research/IP Owner role for binary co-approval? | Option B binary delivery; `application/` with executables | Medium (High for v2) | Remain Option A only |
 | **OQ-4** | Include manifest cryptographic signature in v1.0? | `RELEASE_MANIFEST.json.sig` in package | Low | Ship without signature |
 | **OQ-5** | Is v1.0 without plugins acceptable to partner? | Plugin inclusion decision | Medium | Zero plugins (conservative default) |

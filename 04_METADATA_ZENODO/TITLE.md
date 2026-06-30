@@ -20,15 +20,15 @@
 
 ## Subtitle (optional)
 
-Controlled Evaluation Boundary v1 — SentriOps Partner Evaluation Documentation Package
+Controlled Evaluation Boundary v1 — v1.0-CEB Governance Architecture (frozen research snapshot)
 
 ---
 
 ## Title Notes
 
-- Uses "Evaluation" not "Demo" per proposed OQ-1 resolution (OQ-1 OPEN)
+- Uses frozen publication identity `v1.0-CEB-RELEASE`
 - Does not imply product certification or production readiness
-- Aligns with release identity: SentriOps Partner Evaluation v1.0
+- Aligns with release identity: SentinelOps CEB v1.0 Governance Architecture
 
 ---
 

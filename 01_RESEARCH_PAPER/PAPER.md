@@ -1,7 +1,7 @@
 ﻿# Sovereign Trust Fabric and the Controlled Evaluation Boundary: A Governance-First Model for External Research Review
 
 **Document type:** Research Paper (CEB v1 Package)  
-**Version:** partner-eval-1.0.0  
+**Version:** v1.0-CEB-RELEASE  
 **Date:** 2026-06-30  
 **Author:** David Baldizon  
 **Classification:** Partner Evaluation â€” Research Framework
@@ -46,7 +46,7 @@ The boundary is enforced by **explicit whitelist enumeration**, not by directory
 ### 3.2 Release Identity
 
 - **Human name:** SentriOps Partner Evaluation v1.0
-- **Semantic version:** `partner-eval-1.0.0`
+- **Publication version:** `v1.0-CEB-RELEASE`
 - **Scope (v1.0):** Option A â€” Pure Documentation/Research Review (26 authorized origin paths)
 
 ### 3.3 Three-Layer Integrity Model
@@ -109,10 +109,10 @@ The Sovereign Trust Fabric proposes:
 
 - **Trust Decision Unit (TDU):** Atomic unit pairing a critical decision with minimum evidence package.
 - **`DecisionTrust(D,t)`:** Composition of eight falsifiable predicates with fail-closed semantics.
-- **SARP protocol:** Sovereign Adversary Resilience Protocol â€” meta-audit layer for trust continuity.
+- **Governance evaluation framework:** meta-audit layer for trust continuity at research level.
 - **extended governance evaluation model (theoretical) v1.0:** Theoretical extension (frozen 2026-06-29); not validated by PR #43 empirical scope.
 
-Empirical evidence (PR #43, SHA `50969f5`, 300 pytest) covers sandbox-modeled vectors. extended governance evaluation model (theoretical) theoretical work (340 additional pytest locally) is documented as exploratory and **not** included in formal closure claims.
+Empirical scope is documented at research level as sandbox-modeled vectors. extended governance evaluation model (theoretical) theoretical work is documented as exploratory and **not** included in formal closure claims.
 
 See [`ARCHITECTURE.md`](./ARCHITECTURE.md) and [`LIMITATIONS.md`](./LIMITATIONS.md).
 

@@ -10,8 +10,8 @@
 - trust continuity
 - adversarial degradation
 - sovereign trust fabric
-- SARP protocol
-- clean-room build
+- governance evaluation framework
+- controlled boundary assembly
 - release governance
 - supply-chain integrity
 - fail-closed authorization

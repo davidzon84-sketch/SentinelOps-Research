@@ -101,4 +101,4 @@ Patterns searched: `token`, `secret`, `key`, `password`, `login`, `local-only de
 _Security Release Engineer — mirror integrity gate_
 
 
-> Superseded for publication gates by PUBLICATION_READINESS_REPORT.md
+> Superseded for publication gates by `PUBLICATION_READINESS_REPORT.md` and `PUBLICATION_FINAL_REPORT.md` (freeze: v1.0-CEB-RELEASE).

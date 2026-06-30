@@ -43,7 +43,7 @@ Zenodo deposit receives DOI. GitHub provides commit-level traceability reference
 
 ```
 Baldizon, D. (2026). Sovereign Trust Fabric and the Controlled Evaluation Boundary: 
-A Governance-First Model for External Research Review (partner-eval-1.0.0) 
+A Governance-First Model for External Research Review (v1.0-CEB-RELEASE) 
 [Documentation package]. SentriOps CEB v1. [DOI pending Zenodo deposit]
 ```
 

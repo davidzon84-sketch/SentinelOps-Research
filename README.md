@@ -1,7 +1,8 @@
 ﻿# SentinelOps Research — Controlled Evaluation Boundary (CEB) v1
 
 **Repository type:** Public **research and governance** documentation (not software)  
-**Release line (reference):** SentriOps Partner Evaluation v1.0 (`partner-eval-1.0.0`, provisional)  
+**Publication version:** `v1.0-CEB-RELEASE` (frozen research snapshot)  
+**Short version / tag:** `v1.0-CEB`  
 **Version date:** 2026-06-30  
 
 This repository is **not deployable**. It does not install, run, or operate any product. It publishes the **Controlled Evaluation Boundary (CEB) v1** model: how trust-continuity **research** may be shared under explicit **governance, auditability, and control boundaries**—without disclosing proprietary implementation.
@@ -85,4 +86,4 @@ Prefer Zenodo DOI when assigned ([`04_METADATA_ZENODO/DOI_PLACEHOLDER.md`](./04_
 
 ---
 
-_SentinelOps Research — CEB v1 public research artifact — not a software release._
+_SentinelOps Research — v1.0-CEB publication artifact — frozen research snapshot — non-executable governance model._

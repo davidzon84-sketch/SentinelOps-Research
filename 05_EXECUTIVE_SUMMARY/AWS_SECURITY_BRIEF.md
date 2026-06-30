@@ -21,7 +21,7 @@ CEB v1 defines a **defensive release boundary** for sharing SentinelOps trust-co
 | Secret exfiltration via package | Pre-copy denylist; lexical secret scan (Phase 1.1 PASS) |
 | Artifact tampering post-release | SHA-256 per-file + ZIP hash in DELIVERY_MANIFEST |
 | Unauthorized delivery | SRO approval gate; READY_FOR_EXTERNAL_REVIEW â‰  delivery |
-| Legacy compromised artifact reuse | v1.22.0 blocked; discontinuity enforced |
+| Legacy compromised artifact reuse | Legacy blocked artifacts excluded; discontinuity enforced |
 | Scope expansion without audit | REQUIRES_DESIGN_DECISION blocking state |
 
 ---

@@ -35,7 +35,7 @@ This state is **not an error**. It is the mechanism by which the boundary model 
 | Remain blocked indefinitely | **Yes** |
 | Execute recursive repo copy to "unblock" | **No â€” prohibited** |
 | Infer compile inputs from proprietary trust-layer implementation/ tree | **No â€” prohibited** |
-| Ship legacy v1.22.0 artifact as workaround | **No â€” prohibited** |
+| Ship legacy blocked artifact as workaround | **No — prohibited** |
 | Document research-only package (Option A) | **Yes â€” permitted** |
 | Execute Phase 1 clean-room preparation | **Yes â€” executed 2026-06-30** |
 | Request SRO decision on open questions | **Yes â€” required** |

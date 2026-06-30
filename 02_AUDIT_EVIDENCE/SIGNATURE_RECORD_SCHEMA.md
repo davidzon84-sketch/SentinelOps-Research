@@ -41,8 +41,8 @@ Both must be coherent. SIGNATURE_RECORD may contain operational notes excluded f
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
 | `artifact_name` | string | Yes | ZIP filename |
-| `release_id` | string | Yes | SOPS-PARTNER-EVAL-YYYY-MM-DD-vN |
-| `version` | semver | Yes | partner-eval-1.0.0 |
+| `release_id` | string | Yes | SOPS-CEB-RELEASE-YYYY-MM-DD-vN |
+| `version` | semver | Yes | v1.0-CEB-RELEASE |
 | `artifact_sha256` | hex | Yes | SHA-256 of complete ZIP or DELIVERY_MANIFEST reference |
 
 **Coherence rule:** `artifact_sha256` must match `DELIVERY_MANIFEST.json` zip hash field.
@@ -100,8 +100,8 @@ All must be checked before signing:
 Minimal fields for partner-visible record:
 
 ```yaml
-release_id: SOPS-PARTNER-EVAL-2026-06-30-v1
-version: partner-eval-1.0.0
+release_id: SOPS-CEB-RELEASE-2026-06-30-v1
+version: v1.0-CEB-RELEASE
 approval_date_utc: [ISO 8601]
 sro_name: David Baldizon
 sro_role: Security Release Owner
