@@ -1,0 +1,57 @@
+cff-version: 1.2.0
+message: >-
+  If you use the Controlled Evaluation Boundary (CEB v1) governance model or
+  accompanying research documentation, please cite it using the metadata from
+  this file.
+title: >-
+  Controlled Evaluation Boundary (CEB v1): A Governance Model for Execution
+  Control in Autonomous Systems
+version: 1.0-CEB
+date-released: 2026-06-30
+type: software
+authors:
+  - family-names: Baldizon
+    given-names: David
+    affiliation: SentinelOps Research (Independent Researcher)
+abstract: >-
+  The Controlled Evaluation Boundary (CEB v1) is a governance-first conceptual
+  model for governing when autonomous or complex software systems may become
+  validly executable or deliverable under adversarial and supply-chain
+  uncertainty. CEB reframes execution control as a first-class systems
+  problem: the transition from design to build or external delivery is a
+  security-sensitive state change requiring documented authorization, separable
+  integrity evidence, and accountable human judgment. A central contribution is
+  the formal recognition that non-execution—deliberately withholding build or
+  delivery when preconditions are unmet—is a valid and often preferred security
+  outcome. The artifact documents authorization states, open-question gates,
+  fail-closed transition semantics, and audit-evidence templates at the
+  research level. It is not deployable software, does not certify compliance,
+  and does not disclose product implementation.
+keywords:
+  - execution control
+  - system governance
+  - controlled evaluation boundary
+  - non-execution
+  - auditability
+  - supply-chain governance
+  - fail-closed authorization
+  - clean-room boundary
+  - autonomous system integrity
+  - research externalization
+license: CC-BY-4.0
+repository-code: "https://github.com/[org]/SentinelOps-Research"
+url: "https://github.com/[org]/SentinelOps-Research"
+doi: 10.5281/zenodo.XXXXXXX
+preferred-citation:
+  type: generic
+  title: >-
+    Controlled Evaluation Boundary (CEB v1): A Governance Model for Execution
+    Control in Autonomous Systems
+  authors:
+    - family-names: Baldizon
+      given-names: David
+      affiliation: SentinelOps Research (Independent Researcher)
+  version: 1.0-CEB
+  date-released: 2026-06-30
+  doi: 10.5281/zenodo.XXXXXXX
+  license: CC-BY-4.0
