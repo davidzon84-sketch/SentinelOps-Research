@@ -40,8 +40,8 @@ keywords:
   - autonomous system integrity
   - research externalization
 license: CC-BY-NC-4.0
-repository-code: "https://github.com/[org]/SentinelOps-Research"
-url: "https://github.com/[org]/SentinelOps-Research"
+repository-code: "https://github.com/davidzon84-sketch/SentinelOps-Research"
+url: "https://github.com/davidzon84-sketch/SentinelOps-Research"
 doi: 10.5281/zenodo.XXXXXXX
 preferred-citation:
   type: generic

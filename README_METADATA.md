@@ -29,7 +29,7 @@
 | **Version** | 1.0-CEB |
 | **Release date** | 2026-06-30 |
 | **Git tag** | `v1.0-CEB` |
-| **Commit SHA** | `30261dda9efda27ed15ecd8d35879d300a9a6358` |
+| **Commit SHA** | `115bd821864bb7833a3c0503138a3121d6d459cb` |
 | **Deposit type** | Documentation / Research Framework (non-executable) |
 | **Publication status** | Frozen research snapshot (`PUBLICATION_READY=TRUE`) |
 
@@ -95,9 +95,9 @@ The Controlled Evaluation Boundary (CEB v1) is a research-grade axiomatic govern
 | Type | Value | Notes |
 |------|-------|-------|
 | Git tag | `v1.0-CEB` | Frozen publication version |
-| Commit | `30261dda9efda27ed15ecd8d35879d300a9a6358` | Short: `30261dd` |
+| Commit | `115bd821864bb7833a3c0503138a3121d6d459cb` | Short: `115bd82` |
 | DOI | `10.5281/zenodo.XXXXXXX` | *Pending Zenodo deposit* |
-| Repository | `https://github.com/[org]/SentinelOps-Research` | Placeholder until org assigned |
+| Repository | `https://github.com/davidzon84-sketch/SentinelOps-Research` | Public research mirror |
 | CFF | [`CITATION.cff`](./CITATION.cff) | Machine-readable citation metadata |
 | License URL | https://creativecommons.org/licenses/by-nc/4.0/ | CC BY-NC 4.0 |
 

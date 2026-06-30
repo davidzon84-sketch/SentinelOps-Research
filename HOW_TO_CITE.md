@@ -17,9 +17,9 @@
 | **Version** | 1.0-CEB |
 | **Year** | 2026 |
 | **DOI** | *Pending Zenodo deposit* — placeholder `10.5281/zenodo.XXXXXXX` |
-| **Repository** | `https://github.com/[org]/SentinelOps-Research` |
+| **Repository** | `https://github.com/davidzon84-sketch/SentinelOps-Research` |
 | **Tag** | `v1.0-CEB` |
-| **Commit** | `30261dda9efda27ed15ecd8d35879d300a9a6358` |
+| **Commit** | `115bd821864bb7833a3c0503138a3121d6d459cb` |
 
 ---
 
@@ -35,7 +35,7 @@
 
 > Baldizon, D. (2026). *Controlled Evaluation Boundary (CEB v1): A governance model for execution control in autonomous systems* (Version 1.0-CEB) [Research documentation artifact]. SentinelOps Research. https://doi.org/10.5281/zenodo.XXXXXXX
 
-*Replace the DOI URL with the assigned Zenodo DOI after deposit. Until then, append:* `(Commit 30261dd; Tag v1.0-CEB). https://github.com/[org]/SentinelOps-Research`
+*Replace the DOI URL with the assigned Zenodo DOI after deposit. Until then, append:* `(Commit 115bd82; Tag v1.0-CEB). https://github.com/davidzon84-sketch/SentinelOps-Research`
 
 ---
 
@@ -50,9 +50,9 @@
   version      = {1.0-CEB},
   howpublished = {Research documentation artifact},
   publisher    = {SentinelOps Research},
-  note         = {Axiomatic governance model; conceptual framework only. Tag v1.0-CEB, commit 30261dd.},
+  note         = {Axiomatic governance model; conceptual framework only. Tag v1.0-CEB, commit 115bd82.},
   doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://github.com/[org]/SentinelOps-Research},
+  url          = {https://github.com/davidzon84-sketch/SentinelOps-Research},
   license      = {CC-BY-NC-4.0}
 }
 ```
@@ -78,7 +78,7 @@ Place or reference [`CITATION.cff`](./CITATION.cff) at the repository root. GitH
 | Identifier | Value |
 |------------|-------|
 | Git tag | `v1.0-CEB` |
-| Commit SHA | `30261dda9efda27ed15ecd8d35879d300a9a6358` |
+| Commit SHA | `115bd821864bb7833a3c0503138a3121d6d459cb` |
 | Publication snapshot | Frozen research artifact (`PUBLICATION_READY=TRUE`) |
 
 ---
