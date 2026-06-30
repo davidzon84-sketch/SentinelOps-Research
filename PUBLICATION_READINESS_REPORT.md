@@ -47,11 +47,11 @@ No new implementation directories were added.
 
 | Location | License |
 |----------|---------|
-| Root `LICENSE` | **CC BY 4.0** |
-| `04_METADATA_ZENODO/LICENSE.md` | **CC BY 4.0** |
-| `04_METADATA_ZENODO/ZENODO_ABSTRACT.md` | **CC BY 4.0** |
-| `05_EXECUTIVE_SUMMARY/EXECUTIVE_PITCH_DECK.md` | **CC BY 4.0** |
-| `README.md` | References CC BY 4.0 |
+| Root `LICENSE` | **CC BY-NC 4.0** |
+| `04_METADATA_ZENODO/LICENSE.md` | **CC BY-NC 4.0** |
+| `04_METADATA_ZENODO/ZENODO_ABSTRACT.md` | **CC BY-NC 4.0** |
+| `05_EXECUTIVE_SUMMARY/EXECUTIVE_PITCH_DECK.md` | **CC BY-NC 4.0** |
+| `README.md` | References CC BY-NC 4.0 |
 
 **License gate:** **PASS** (single license — no mixing)
 
@@ -67,7 +67,7 @@ Patterns: credentials, `localhost`, absolute internal paths, internal drive lett
 | No operational script names | PASS |
 | No `localhost` literals in publication docs | PASS |
 | Lexical `secret`/`password` in governance denylist text | Triaged false positives |
-| No `BY-NC` license references | PASS |
+| No `BY 4.0` license references | PASS |
 
 **Security gate:** **PASS**
 

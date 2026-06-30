@@ -26,8 +26,8 @@ abstract: >-
   often preferred security outcome, not a program failure. The artifact
   declares governance structures, open-question gates, fail-closed transition
   semantics, and audit-evidence schema invariants at the research level. It
-  is a conceptual framework only: non-executable, non-certifying, and
-  implementation-agnostic.
+  is a Reference Governance Architecture — a conceptual framework only:
+  non-executable, non-certifying, and implementation-agnostic.
 keywords:
   - execution control
   - system governance
@@ -39,7 +39,7 @@ keywords:
   - clean-room boundary
   - autonomous system integrity
   - research externalization
-license: CC-BY-4.0
+license: CC-BY-NC-4.0
 repository-code: "https://github.com/[org]/SentinelOps-Research"
 url: "https://github.com/[org]/SentinelOps-Research"
 doi: 10.5281/zenodo.XXXXXXX
@@ -55,4 +55,4 @@ preferred-citation:
   version: 1.0-CEB
   date-released: 2026-06-30
   doi: 10.5281/zenodo.XXXXXXX
-  license: CC-BY-4.0
+  license: CC-BY-NC-4.0

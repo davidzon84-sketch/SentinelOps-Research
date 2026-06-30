@@ -77,7 +77,7 @@ Patterns searched: `token`, `secret`, `key`, `password`, `login`, `local-only de
 | 05_EXECUTIVE_SUMMARY/NON_TECHNICAL_SUMMARY.md | 7d0166ea7d49cd0fe86d5b00a6f1823a04b4e8f06cbae61f3491587287e24181 | 7d0166ea7d49cd0fe86d5b00a6f1823a04b4e8f06cbae61f3491587287e24181 | MATCH |
 | README.md | 89ee1e1f9d0a2afd3dd385fc727e8878ca2484bb0c5bd02f54dbd6ec015a3810 | b5ca678eb6b764e20f0695bd6973157a0fd1f8fc6f96c65dc8fd77112d08fc80 | DIFF — public rewrite |
 
-| `LICENSE` (mirror only) | N/A | `56a2328d4e883e190a8301352a9b2ea2c598e37b2cba7191f39508c381bafbc3` | **NEW** — CC BY 4.0 root license |
+| `LICENSE` (mirror only) | N/A | `56a2328d4e883e190a8301352a9b2ea2c598e37b2cba7191f39508c381bafbc3` | **NEW** — CC BY-NC 4.0 root license |
 
 **Byte-identical copies:** 24 / 28 CEB files  
 **Intentional differences:** 4 (`README.md` public rewrite; `02_AUDIT_EVIDENCE/EXECUTION_TRACE_MODEL.md`, `04_METADATA_ZENODO/DOI_PLACEHOLDER.md`, `04_METADATA_ZENODO/LICENSE.md` path sanitization)
@@ -94,7 +94,7 @@ Patterns searched: `token`, `secret`, `key`, `password`, `login`, `local-only de
 
 **Status:** **READY_FOR_GITHUB_PUBLICATION**
 
-**Notes for Zenodo linking:** Reconcile root `LICENSE` (CC BY 4.0) with deposit notes in `04_METADATA_ZENODO/LICENSE.md` (CC BY 4.0 recommendation) before DOI deposit. Record commit `fb6e2178c26c19b60bec9ebbf3fd9432437750e7` in BUILD_RECORD when publishing.
+**Notes for Zenodo linking:** Reconcile root `LICENSE` (CC BY-NC 4.0) with deposit notes in `04_METADATA_ZENODO/LICENSE.md` (CC BY-NC 4.0 recommendation) before DOI deposit. Record commit `fb6e2178c26c19b60bec9ebbf3fd9432437750e7` in BUILD_RECORD when publishing.
 
 ---
 

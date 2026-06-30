@@ -37,8 +37,8 @@
 
 ## License
 
-**Creative Commons Attribution 4.0 International (CC BY 4.0)**  
-https://creativecommons.org/licenses/by/4.0/
+**Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**  
+https://creativecommons.org/licenses/by-nc/4.0/
 
 ---
 
@@ -99,7 +99,7 @@ The Controlled Evaluation Boundary (CEB v1) is a research-grade axiomatic govern
 | DOI | `10.5281/zenodo.XXXXXXX` | *Pending Zenodo deposit* |
 | Repository | `https://github.com/[org]/SentinelOps-Research` | Placeholder until org assigned |
 | CFF | [`CITATION.cff`](./CITATION.cff) | Machine-readable citation metadata |
-| License URL | https://creativecommons.org/licenses/by/4.0/ | CC BY 4.0 |
+| License URL | https://creativecommons.org/licenses/by-nc/4.0/ | CC BY-NC 4.0 |
 
 ---
 

@@ -75,13 +75,13 @@ All publication freeze conditions met. Repository is ready for GitHub public rel
 
 | Location | Declared license | Matches root |
 |----------|------------------|--------------|
-| Root `LICENSE` | CC BY 4.0 (SPDX: CC-BY-4.0) | — (authoritative) |
-| `04_METADATA_ZENODO/LICENSE.md` | CC BY 4.0 | **YES** |
-| `04_METADATA_ZENODO/ZENODO_ABSTRACT.md` | CC BY 4.0 | **YES** |
-| `05_EXECUTIVE_SUMMARY/EXECUTIVE_PITCH_DECK.md` | CC BY 4.0 | **YES** |
-| `README.md` | CC BY 4.0 (linked) | **YES** |
+| Root `LICENSE` | CC BY-NC 4.0 (SPDX: CC-BY-NC-4.0) | — (authoritative) |
+| `04_METADATA_ZENODO/LICENSE.md` | CC BY-NC 4.0 | **YES** |
+| `04_METADATA_ZENODO/ZENODO_ABSTRACT.md` | CC BY-NC 4.0 | **YES** |
+| `05_EXECUTIVE_SUMMARY/EXECUTIVE_PITCH_DECK.md` | CC BY-NC 4.0 | **YES** |
+| `README.md` | CC BY-NC 4.0 (linked) | **YES** |
 
-**Single license confirmed:** Creative Commons Attribution 4.0 International. No CC BY-NC references remain.
+**Single license confirmed:** Creative Commons Attribution-NonCommercial 4.0 International. No CC BY 4.0 references remain.
 
 ---
 
@@ -109,7 +109,7 @@ All publication freeze conditions met. Repository is ready for GitHub public rel
 | `localhost` literals | None in publication docs (scan pattern references in readiness report only) | **PASS** |
 | Absolute internal drive paths | None in publication corpus | **PASS** |
 | `secret` / `password` / `token` in governance denylist or schema field names | Expected false positives | **PASS** |
-| CC BY-NC license remnants | None | **PASS** |
+| CC BY 4.0 license remnants | None | **PASS** |
 | SARP implementation identifiers / commit SHAs | Removed from publication corpus | **PASS** |
 | Legacy product version numbers (`v1.22.0`) | Abstracted to "legacy blocked artifact" | **PASS** |
 

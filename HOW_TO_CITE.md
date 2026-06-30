@@ -3,7 +3,7 @@
 **Artifact:** Controlled Evaluation Boundary (CEB v1)  
 **Version:** 1.0-CEB  
 **Release date:** 2026-06-30  
-**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+**License:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ---
 
@@ -53,7 +53,7 @@
   note         = {Axiomatic governance model; conceptual framework only. Tag v1.0-CEB, commit 30261dd.},
   doi          = {10.5281/zenodo.XXXXXXX},
   url          = {https://github.com/[org]/SentinelOps-Research},
-  license      = {CC-BY-4.0}
+  license      = {CC-BY-NC-4.0}
 }
 ```
 

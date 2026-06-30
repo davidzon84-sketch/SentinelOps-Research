@@ -3,7 +3,7 @@
 **Artifact:** Controlled Evaluation Boundary (CEB v1)  
 **Version:** 1.0-CEB  
 **Date:** 2026-06-30  
-**License:** CC BY 4.0
+**License:** CC BY-NC 4.0
 
 ---
 

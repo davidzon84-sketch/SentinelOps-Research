@@ -3,7 +3,7 @@
 **Field:** Description / Abstract  
 **Deposit type:** Documentation / Research Framework  
 **Date:** 2026-06-30  
-**License (deposit):** CC BY 4.0 — aligned with root [`LICENSE`](../LICENSE) and [`LICENSE.md`](./LICENSE.md).  
+**License (deposit):** CC BY-NC 4.0 — aligned with root [`LICENSE`](../LICENSE) and [`LICENSE.md`](./LICENSE.md).  
 **Publication version:** `v1.0-CEB-RELEASE` (frozen research snapshot)
 
 ---
