@@ -1,9 +1,9 @@
-# BUILD_RECORD Schema
+﻿# BUILD_RECORD Schema
 
 **Boundary:** Controlled Evaluation Boundary v1  
-**Document type:** Audit Evidence — Operational Build Record Specification  
+**Document type:** Audit Evidence â€” Operational Build Record Specification  
 **Date:** 2026-06-30  
-**Source template:** `partner-release/templates/BUILD_RECORD.md`
+**Source template:** internal governance template (not published)
 
 ---
 
@@ -16,7 +16,7 @@ The BUILD_RECORD is **not** a substitute for:
 - `integrity/RELEASE_MANIFEST.json` (structured inventory)
 - `integrity/APPROVAL_RECORD.md` (human delivery authorization)
 
-**Location convention:** `partner-release/reports/BUILD_RECORD_<ReleaseID>.md` (outside deliverable ZIP).
+**Location convention:** internal audit archive (not published)
 
 ---
 
@@ -45,8 +45,8 @@ The BUILD_RECORD is **not** a substitute for:
 ### Prohibited Origin Checklist
 
 - [ ] No development repository working tree as direct source
-- [ ] No `PARTNER_SECURITY_AUDIT/workspace/`
-- [ ] No legacy `SentinelOPS_OS_Partner_Release_v1.22.0.zip`
+- [ ] No `internal audit workspace/`
+- [ ] No legacy `legacy partner artifact (discontinued)`
 
 ---
 
@@ -75,17 +75,9 @@ The BUILD_RECORD is **not** a substitute for:
 
 ---
 
-## 5. Schema: Toolchain (Option B only)
+## 5. Schema: Toolchain
 
-| Field | Type | Required (B) | Description |
-|-------|------|--------------|-------------|
-| `compiler` | string | Yes | Compiler identity and version |
-| `linker` | string | Conditional | If applicable |
-| `strip_tool` | string | Yes | Symbol stripping tool |
-| `build_host_os` | string | Yes | Host operating system |
-| `python_version` | string | For gates | Gate script runtime |
-
-For Option A: toolchain block marked `N/A — documental assembly only`.
+Not applicable in this public research artifact (Option A). Operational toolchain classes remain private.
 
 ---
 
@@ -106,24 +98,24 @@ For Option A: toolchain block marked `N/A — documental assembly only`.
 |--------|------|-------------|
 | `#` | integer | Row index |
 | `package_path` | string | Relative path in deliverable |
-| `functional_purpose` | string | Trust Fabric / SARP-OMEGA eval justification |
+| `functional_purpose` | string | Documented evaluation purpose (abstract) |
 | `sha256_post_strip` | hex | Hash after strip |
 | `strip_applied` | boolean | Must be true |
 
-Option A: single row — `application/README.md` placeholder; no binaries.
+Option A: single row â€” `application/README.md` placeholder; no binaries.
 
 ---
 
-## 8. Schema: Gate Results
+## 8. Schema: Gate Results (Conceptual)
 
-| Gate | Field | Type |
-|------|-------|------|
-| `audit_partner_package.py` | `exit_code` | integer |
-| | `timestamp_utc` | ISO 8601 |
-| | `report_path` | path |
-| `partner_release_gate.py` | `exit_code` | integer (must be 0 for progression) |
-| | `timestamp_utc` | ISO 8601 |
-| | `report_path` | path |
+| Field | Type | Description |
+|-------|------|-------------|
+| `gate_id` | string | Governance gate identifier |
+| `result` | enum | `PASS` / `FAIL` / `NOT_RUN` |
+| `attested_by` | string | Human or recorded validation role |
+| `timestamp_utc` | ISO 8601 | Attestation time |
+
+No operational automation or script identifiers are published in this mirror.
 
 ---
 
@@ -133,7 +125,7 @@ Option A: single row — `application/README.md` placeholder; no binaries.
 |-------|------|----------|
 | `operator_identity` | string | Yes |
 | `operator_role` | string | Yes (e.g., Build Operator) |
-| `sro` | string | Yes — David Baldizon |
+| `sro` | string | Yes â€” David Baldizon |
 | `record_date` | date | Yes |
 
 ---
@@ -144,7 +136,7 @@ Option A: single row — `application/README.md` placeholder; no binaries.
 |-------|------|-------|
 | `inventory_sha256_generated` | boolean | BUILD |
 | `zip_sha256` | hex | POST-ZIP |
-| `version_coherence` | boolean | BUILD — all version fields match |
+| `version_coherence` | boolean | BUILD â€” all version fields match |
 
 ---
 
@@ -173,4 +165,4 @@ Incomplete BUILD_RECORD blocks transition to `BUILD_VALIDATED`.
 
 ---
 
-_BUILD_RECORD Schema — CEB v1 — 2026-06-30_
+_BUILD_RECORD Schema â€” CEB v1 â€” 2026-06-30_

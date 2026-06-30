@@ -1,10 +1,10 @@
-# CEB v1 Release Authorization Model
+﻿# CEB v1 Release Authorization Model
 
 **Boundary:** Controlled Evaluation Boundary v1  
-**Document type:** Governance — Operational Authorization Model  
+**Document type:** Governance â€” Operational Authorization Model  
 **Date:** 2026-06-30  
 **CEB v1 cycle:** CLOSED  
-**Current operational states:** `AUTHORIZATION_READY_FOR_BUILD` · `REQUIRES_DESIGN_DECISION` (whitelist pending)  
+**Current operational states:** `AUTHORIZATION_READY_FOR_BUILD` Â· `REQUIRES_DESIGN_DECISION` (whitelist pending)  
 **Security Release Owner:** David Baldizon
 
 > **Explicit declaration:** This document does not produce ZIP artifacts, execute builds, modify productive code, or substitute human approval.
@@ -36,16 +36,16 @@ The Security Release Owner is the final human authority for crossing the boundar
 
 | Attribute | Definition |
 |-----------|------------|
-| **Holder** | David Baldizon — Project Owner (SentinelOps OS); designated SRO (OQ-2 **CLOSED** 2026-06-30) |
-| **Research / IP Owner** | David Baldizon — custody of unpublished research and exposure policy |
-| **Security Release Architect** | Design and contract role — does not substitute SRO approval |
+| **Holder** | David Baldizon â€” Project Owner (SentinelOps OS); designated SRO (OQ-2 **CLOSED** 2026-06-30) |
+| **Research / IP Owner** | David Baldizon â€” custody of unpublished research and exposure policy |
+| **Security Release Architect** | Design and contract role â€” does not substitute SRO approval |
 
 ### 2.2 SRO Responsibilities
 
 1. Authorize or reject initiation of clean-room build under declared scope.
 2. Review build evidence (`BUILD_RECORD`, manifests, clean-room log) before declaring `BUILD_VALIDATED`.
 3. Confirm adversarial audit V2 has no open CRITICAL/HIGH blockers before external review transition.
-4. Issue documented verdict in `integrity/APPROVAL_RECORD.md` — sole mechanism enabling `APPROVED_FOR_DELIVERY`.
+4. Issue documented verdict in `integrity/APPROVAL_RECORD.md` â€” sole mechanism enabling `APPROVED_FOR_DELIVERY`.
 5. Reject delivery if any identity field diverges from version policy.
 
 ### 2.3 Approval Authority Limits
@@ -64,25 +64,25 @@ The Security Release Owner is the final human authority for crossing the boundar
 
 Three **independent** layers. Conflating them invalidates the evidence chain.
 
-### 3.1 Integrity — Hash (SHA-256)
+### 3.1 Integrity â€” Hash (SHA-256)
 
 | Question | Has package content changed since packaging? |
 | Mechanism | SHA-256 per file + SHA-256 of complete ZIP |
 | Evidence | `integrity/SHA256_MANIFEST.txt`, `RELEASE_MANIFEST.json`, `DELIVERY_MANIFEST.json` |
 | Limit | Proves artifact integrity, not absence of vulnerabilities or sender authenticity |
 
-### 3.2 Provenance — Signature (optional v1.0)
+### 3.2 Provenance â€” Signature (optional v1.0)
 
 | Question | Who generated the manifest and with what cryptographic identity? |
 | Mechanism | Manifest signature (e.g., `RELEASE_MANIFEST.json.sig`) + embedded public key |
-| CEB v1.0 status | **Optional** — OQ-4 **OPEN** |
+| CEB v1.0 status | **Optional** â€” OQ-4 **OPEN** |
 | Prohibited | Private keys (`*.pem`, `*.key`) in partner package |
 
-### 3.3 Authorization — Human Decision
+### 3.3 Authorization â€” Human Decision
 
 | Question | Did an authorized human permit delivery? |
-| Mechanism | `integrity/APPROVAL_RECORD.md` — roles, UTC date, release_id, verdict |
-| Rule | Without complete `APPROVAL_RECORD.md` → maximum state `READY_FOR_EXTERNAL_REVIEW` |
+| Mechanism | `integrity/APPROVAL_RECORD.md` â€” roles, UTC date, release_id, verdict |
+| Rule | Without complete `APPROVAL_RECORD.md` â†’ maximum state `READY_FOR_EXTERNAL_REVIEW` |
 
 ### 3.4 Mandatory Coherence
 
@@ -90,7 +90,7 @@ Three **independent** layers. Conflating them invalidates the evidence chain.
 ZIP_name.version == integrity/VERSION == RELEASE_MANIFEST.version == DELIVERY_MANIFEST.version
 ```
 
-Any divergence → `BLOCKED_PENDING_REMEDIATION`.
+Any divergence â†’ `BLOCKED_PENDING_REMEDIATION`.
 
 ---
 
@@ -98,21 +98,21 @@ Any divergence → `BLOCKED_PENDING_REMEDIATION`.
 
 | Category | CEB v1.0 Policy |
 |----------|-----------------|
-| Included | **None** — `plugins/` directory absent by default |
-| Excluded absolutely | `plugins/premium/*`, `plugins/backend/*`, any plugin with infra/secret/tenant access |
-| OQ-5 | **OPEN** — partner acceptance of zero-plugin v1.0 |
+| Included | **None** â€” `plugins/` directory absent by default |
+| Excluded absolutely | `plugins/premium/*`, `plugins/proprietary server implementation/*`, any plugin with infra/secret/tenant access |
+| OQ-5 | **OPEN** â€” partner acceptance of zero-plugin v1.0 |
 
 ---
 
-## 5. Binary Scope (OQ-6 — CLOSED)
+## 5. Binary Scope (OQ-6 â€” CLOSED)
 
 **Option A selected:** Pure Documentation/Research Review for v1.0.
 
 | Component | v1.0 Policy |
 |-----------|-------------|
-| `application/` | `README.md` placeholder only — no functional binaries |
-| Option B (deferred) | Functional evaluation binaries → release ID `-v2` with IP co-approval (OQ-3) |
-| Always prohibited | Productive source: `backend/`, `frontend/`, `trust-fabric/` as source tree |
+| `application/` | `README.md` placeholder only â€” no functional binaries |
+| Option B (deferred) | Functional evaluation binaries â†’ release ID `-v2` with IP co-approval (OQ-3) |
+| Always prohibited | Productive source: proprietary server implementation (not disclosed), proprietary client implementation (not disclosed), proprietary trust-layer implementation (not disclosed) as source tree |
 
 ---
 
@@ -130,7 +130,7 @@ Any divergence → `BLOCKED_PENDING_REMEDIATION`.
 
 ### 6.2 Operational BUILD_RECORD (outside ZIP)
 
-Location: `partner-release/reports/BUILD_RECORD_<ReleaseID>.md`  
+Location: `internal release governance archive/reports/BUILD_RECORD_<ReleaseID>.md`  
 Covers operational provenance; does not substitute manifests or human approval.
 
 ---
@@ -139,17 +139,17 @@ Covers operational provenance; does not substitute manifests or human approval.
 
 ```
 CLEAN_BUILD_ENVIRONMENT
-  → SHA-256 inventory
-  → SHA256_MANIFEST.txt + RELEASE_MANIFEST.json + VERSION
-  → BUILD_RECORD (start and close)
-  → PACKAGE_GENERATION (ZIP) [requires explicit authorization]
-  → DELIVERY_MANIFEST.json (security_status: pending)
-  → AUDIT_GATE (exit 0) → BUILD_VALIDATED
-  → AUDIT V2 (no CRITICAL/HIGH) → READY_FOR_EXTERNAL_REVIEW
-  → APPROVAL_RECORD.md → APPROVED_FOR_DELIVERY
+  â†’ SHA-256 inventory
+  â†’ SHA256_MANIFEST.txt + RELEASE_MANIFEST.json + VERSION
+  â†’ BUILD_RECORD (start and close)
+  â†’ PACKAGE_GENERATION (ZIP) [requires explicit authorization]
+  â†’ DELIVERY_MANIFEST.json (security_status: pending)
+  â†’ AUDIT_GATE (exit 0) â†’ BUILD_VALIDATED
+  â†’ AUDIT V2 (no CRITICAL/HIGH) â†’ READY_FOR_EXTERNAL_REVIEW
+  â†’ APPROVAL_RECORD.md â†’ APPROVED_FOR_DELIVERY
 ```
 
-**Current position:** Phase 1 executed; flow paused at clean-room preparation — valid under Option A and open OQs.
+**Current position:** Phase 1 executed; flow paused at clean-room preparation â€” valid under Option A and open OQs.
 
 ---
 
@@ -170,7 +170,7 @@ CLEAN_BUILD_ENVIRONMENT
 
 ## 9. V2 Review Status
 
-Adversarial Audit V2 **review completed** (2026-06-30). Criteria frozen; FC-03 PASS (SRO identified). Artifact-dependent items PENDING — consistent with non-execution posture.
+Adversarial Audit V2 **review completed** (2026-06-30). Criteria frozen; FC-03 PASS (SRO identified). Artifact-dependent items PENDING â€” consistent with non-execution posture.
 
 ---
 
@@ -182,7 +182,7 @@ BOUNDARY              = Controlled Evaluation Boundary v1
 CYCLE_STATUS          = CLOSED
 OPERATIONAL_STATES    = AUTHORIZATION_READY_FOR_BUILD + REQUIRES_DESIGN_DECISION
 IDENTITY              = PROVISIONAL (OQ-1 OPEN)
-SCOPE                 = Option A — documental only
+SCOPE                 = Option A â€” documental only
 WHITELIST             = PENDING
 PHASE_1               = EXECUTED
 V2_REVIEW             = COMPLETED
@@ -195,4 +195,4 @@ This model authorizes continued governance documentation and clean-room preparat
 
 ---
 
-_CEB v1 Release Authorization Model — 2026-06-30_
+_CEB v1 Release Authorization Model â€” 2026-06-30_

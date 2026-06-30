@@ -1,15 +1,15 @@
-# Zenodo DOI Placeholder
+﻿# Zenodo DOI Placeholder
 
 **Field:** Digital Object Identifier  
 **Date:** 2026-06-30  
-**Status:** **NOT ASSIGNED** — deposit pending
+**Status:** **NOT ASSIGNED** â€” deposit pending
 
 ---
 
 ## DOI Status
 
 ```
-DOI: [PENDING — to be assigned upon Zenodo deposit]
+DOI: [PENDING â€” to be assigned upon Zenodo deposit]
 ```
 
 ---
@@ -63,8 +63,8 @@ When DOI assigned:
 
 ## Deposit Scope Note
 
-Zenodo deposit intended for **governance and research documentation only** (28-file tree). Productive source code (`backend/`, `frontend/`, `trust-fabric/`) is explicitly excluded.
+Zenodo deposit intended for **governance and research documentation only** (28-file tree). Productive source code (proprietary server implementation (not disclosed), proprietary client implementation (not disclosed), proprietary trust-layer implementation (not disclosed)) is explicitly excluded.
 
 ---
 
-_DOI_PLACEHOLDER.md — Zenodo Metadata — CEB v1 — 2026-06-30_
+_DOI_PLACEHOLDER.md â€” Zenodo Metadata â€” CEB v1 â€” 2026-06-30_

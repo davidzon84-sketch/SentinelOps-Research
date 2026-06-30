@@ -1,8 +1,8 @@
-# Zenodo Version
+﻿# Zenodo Version
 
 **Field:** Version / Release Identity  
 **Date:** 2026-06-30  
-**Status:** Provisional — OQ-1 OPEN
+**Status:** Provisional â€” OQ-1 OPEN
 
 ---
 
@@ -14,7 +14,7 @@
 | **Semantic version** | `partner-eval-1.0.0` |
 | **Release ID** | `SOPS-PARTNER-EVAL-2026-06-30-v1` |
 | **CEB boundary version** | v1 (**CLOSED**) |
-| **Scope option** | A — Pure Documentation/Research Review |
+| **Scope option** | A â€” Pure Documentation/Research Review |
 
 ---
 
@@ -42,9 +42,9 @@
 
 | Component | Version | Status |
 |-----------|---------|--------|
-| SARP-OMEGA | v1.0 | Frozen 2026-06-29 |
+| extended governance evaluation model (theoretical) | v1.0 | Frozen 2026-06-29 |
 | STF Paper | 1.0 | Frozen |
-| PR #43 empirical scope | SHA `50969f5` | Formal closure (separate from CEB package) |
+| internal sandbox review (not published) empirical scope | SHA `50969f5` | Formal closure (separate from CEB package) |
 | EXTERNAL_AUDIT_PACKAGE | Externalization v1 | Public research docs |
 
 ---
@@ -71,4 +71,4 @@ OPEN_OQ               = 4 (OQ-1, OQ-3, OQ-4, OQ-5)
 
 ---
 
-_VERSION.md — Zenodo Metadata — CEB v1 — 2026-06-30_
+_VERSION.md â€” Zenodo Metadata â€” CEB v1 â€” 2026-06-30_

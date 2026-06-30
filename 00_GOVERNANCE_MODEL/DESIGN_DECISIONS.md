@@ -1,10 +1,10 @@
-# CEB v1 Design Decisions (D-1 through D-5)
+﻿# CEB v1 Design Decisions (D-1 through D-5)
 
 **Boundary:** Controlled Evaluation Boundary v1  
-**Document type:** Governance — Design Freeze Register  
+**Document type:** Governance â€” Design Freeze Register  
 **Date:** 2026-06-30  
 **Program status:** CEB v1 **CLOSED** (design freeze complete)  
-**Concurrent operational states:** `AUTHORIZATION_READY_FOR_BUILD` · `REQUIRES_DESIGN_DECISION` (whitelist pending)
+**Concurrent operational states:** `AUTHORIZATION_READY_FOR_BUILD` Â· `REQUIRES_DESIGN_DECISION` (whitelist pending)
 
 > **Explicit declaration:** This document records frozen design decisions. It does not produce ZIP artifacts, execute builds, modify productive code, or authorize partner delivery.
 
@@ -18,7 +18,7 @@ Design decisions D-1 through D-5 translate pre-release readiness findings into v
 
 ## 2. Decision Register
 
-### D-1 — Release Identity
+### D-1 â€” Release Identity
 
 | Field | Proposed value (pending OQ-1) |
 |-------|-------------------------------|
@@ -31,13 +31,13 @@ Design decisions D-1 through D-5 translate pre-release readiness findings into v
 
 **Rationale.** Discontinuity with legacy `v1.22.0` requires an unambiguous identity. "Evaluation" communicates limited scope without implying certification or live-data operation.
 
-**OQ-1 status:** **OPEN** — supersession of "Demo" / `partner-eval-2.0.0` nomenclature requires explicit SRO confirmation before manifest generation.
+**OQ-1 status:** **OPEN** â€” supersession of "Demo" / `partner-eval-2.0.0` nomenclature requires explicit SRO confirmation before manifest generation.
 
-**Superseded sources:** `PARTNER_RELEASE_IDENTITY.md` (`partner-eval-2.0.0`, "Demo" naming); `PARTNER_VERSION_POLICY.md` §5 (`SentriOps_Partner_Demo_<version>.zip`).
+**Superseded sources:** `PARTNER_RELEASE_IDENTITY.md` (`partner-eval-2.0.0`, "Demo" naming); `PARTNER_VERSION_POLICY.md` Â§5 (`SentriOps_Partner_Demo_<version>.zip`).
 
 ---
 
-### D-2 — Application Boundary
+### D-2 â€” Application Boundary
 
 | Component | Permitted | Condition |
 |-----------|-----------|-----------|
@@ -48,56 +48,56 @@ Design decisions D-1 through D-5 translate pre-release readiness findings into v
 | `integrity/` | Yes | Manifests and hashes; no private keys |
 | `application/` | Conditional | Placeholder only under Option A |
 
-**Private (never crosses boundary):** `backend/`, `frontend/`, `trust-fabric/` (source tree); unpublished research archives; secrets; dev toolchain; internal governance; legacy `v1.22.0` artifact; forensic workspace origin.
+**Private (never crosses boundary):** proprietary server implementation (not disclosed), proprietary client implementation (not disclosed), proprietary trust-layer implementation (not disclosed) (source tree); unpublished research archives; secrets; dev toolchain; internal governance; legacy `v1.22.0` artifact; forensic workspace origin.
 
 **Out of scope:** Regulatory certification; SIEM/EDR/WAF replacement; dev infrastructure access; IP transfer; undeclared telemetry; external targeting.
 
 ---
 
-### D-3 — Clean-Room Build Model
+### D-3 â€” Clean-Room Build Model
 
 | Principle | Requirement |
 |-----------|-------------|
 | Workspace isolation | Outside development repository tree |
 | Ingress | File-level whitelist only; no directory grants |
-| Prohibited origins | Dev working tree, `PARTNER_SECURITY_AUDIT/workspace/`, legacy ZIP |
+| Prohibited origins | Dev working tree, `internal audit workspace/`, legacy ZIP |
 | Recursive copy | **Prohibited** |
 | Non-execution | Valid terminal posture when preconditions unmet |
 
-**Phase 1 status:** **EXECUTED** (2026-06-30) — isolated workspace prepared; contractual skeleton staged; no compilation, binaries, or ZIP.
+**Phase 1 status:** **EXECUTED** (2026-06-30) â€” isolated workspace prepared; contractual skeleton staged; no compilation, binaries, or ZIP.
 
 ---
 
-### D-4 — Evidence and Integrity Model
+### D-4 â€” Evidence and Integrity Model
 
 Three independent layers:
 
 1. **Integrity (SHA-256):** Per-file and ZIP-level hashes in `integrity/SHA256_MANIFEST.txt`, `RELEASE_MANIFEST.json`, `DELIVERY_MANIFEST.json`.
-2. **Provenance (signature):** Optional in v1.0 — OQ-4 **OPEN**.
-3. **Authorization (human):** `integrity/APPROVAL_RECORD.md` — sole delivery enabler.
+2. **Provenance (signature):** Optional in v1.0 â€” OQ-4 **OPEN**.
+3. **Authorization (human):** `integrity/APPROVAL_RECORD.md` â€” sole delivery enabler.
 
 Mandatory coherence: `ZIP_name.version == integrity/VERSION == RELEASE_MANIFEST.version == DELIVERY_MANIFEST.version`.
 
 ---
 
-### D-5 — Plugin Policy
+### D-5 â€” Plugin Policy
 
 | Category | CEB v1.0 policy |
 |----------|-----------------|
-| Included | **None** — `plugins/` absent by default |
-| Excluded | `plugins/premium/*`, `plugins/backend/*`, any infra/secret/tenant plugin |
+| Included | **None** â€” `plugins/` absent by default |
+| Excluded | `plugins/premium/*`, `plugins/proprietary server implementation/*`, any infra/secret/tenant plugin |
 | Future inclusion | Requires sandbox audit + whitelist amendment + OQ-5 resolution |
 
 ---
 
-## 3. Scope Decision (OQ-6 — CLOSED)
+## 3. Scope Decision (OQ-6 â€” CLOSED)
 
 **Option A selected:** Pure Documentation/Research Review for v1.0.
 
 | Rule | Value |
 |------|-------|
 | v1.0 content | Curated documentation, public JSON schemas (point copy), contractual placeholders |
-| Option B (deferred) | Functional evaluation binaries → Release ID `-v2` with IP co-approval (OQ-3) |
+| Option B (deferred) | Functional evaluation binaries â†’ Release ID `-v2` with IP co-approval (OQ-3) |
 | Prohibited always | Productive source trees |
 
 ---
@@ -106,9 +106,9 @@ Mandatory coherence: `ZIP_name.version == integrity/VERSION == RELEASE_MANIFEST.
 
 | Field | Value |
 |-------|-------|
-| **DESIGN_DECISION_READY** | Partial — scope frozen; **file enumeration pending** |
+| **DESIGN_DECISION_READY** | Partial â€” scope frozen; **file enumeration pending** |
 | **Proposed routes** | 26 (documented in `03_CLEAN_ROOM_PIPELINE/WHITELIST_POLICY.md`) |
-| **Authoritative status** | **PENDING** — blocks exit from `REQUIRES_DESIGN_DECISION` |
+| **Authoritative status** | **PENDING** â€” blocks exit from `REQUIRES_DESIGN_DECISION` |
 | **Blocking OQs** | OQ-1 (identity alignment affects manifest fields) |
 
 Absence of finalized whitelist is a **valid block**, not a defect requiring silent scope expansion.
@@ -122,7 +122,7 @@ Absence of finalized whitelist is a **valid block**, not a defect requiring sile
 | Protocol | `PARTNER_SECURITY_AUDIT_V2/AUDIT_V2_PROTOCOL.md` |
 | Criteria | FC-01 through FC-25 frozen |
 | Review status | **COMPLETED** (2026-06-30) |
-| Artifact-dependent items | Remain `PENDING` until build/ZIP exists — expected under Option A |
+| Artifact-dependent items | Remain `PENDING` until build/ZIP exists â€” expected under Option A |
 
 V2 review completion validates criteria and protocol readiness; it does not substitute artifact verification or delivery authorization.
 
@@ -160,4 +160,4 @@ CEB v1 design freeze is **closed**. Operational progress toward delivery remains
 
 ---
 
-_DESIGN_DECISIONS.md — CEB v1 Governance — 2026-06-30_
+_DESIGN_DECISIONS.md â€” CEB v1 Governance â€” 2026-06-30_

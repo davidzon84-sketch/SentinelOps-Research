@@ -1,10 +1,10 @@
-# Sovereign Trust Fabric and the Controlled Evaluation Boundary: A Governance-First Model for External Research Review
+﻿# Sovereign Trust Fabric and the Controlled Evaluation Boundary: A Governance-First Model for External Research Review
 
 **Document type:** Research Paper (CEB v1 Package)  
 **Version:** partner-eval-1.0.0  
 **Date:** 2026-06-30  
 **Author:** David Baldizon  
-**Classification:** Partner Evaluation — Research Framework
+**Classification:** Partner Evaluation â€” Research Framework
 
 ---
 
@@ -22,7 +22,7 @@ See [`INTRODUCTION.md`](./INTRODUCTION.md).
 
 ## 2. Problem Statement
 
-Autonomous systems increasingly operate under adversarial degradation of initial trust assumptions. Conventional verification—functional testing, perimeter controls, artifact signing—addresses operational correctness but provides insufficient epistemic grounding when trust in the verification mechanism itself is challenged.
+Autonomous systems increasingly operate under adversarial degradation of initial trust assumptions. Conventional verificationâ€”functional testing, perimeter controls, artifact signingâ€”addresses operational correctness but provides insufficient epistemic grounding when trust in the verification mechanism itself is challenged.
 
 SentinelOps research proposes the **Sovereign Trust Fabric (STF)**, a framework in which autonomous systems evaluate not only whether decisions are operationally correct, but whether the **evidential conditions** required to justify trust in those decisions remain satisfied under degradation.
 
@@ -38,7 +38,7 @@ CEB v1 defines a hard separation between:
 
 | Side | Contents |
 |------|----------|
-| **Private (development)** | `backend/`, `frontend/`, `trust-fabric/` source; unpublished research; operational secrets |
+| **Private (development)** | proprietary server implementation (not disclosed), proprietary client implementation (not disclosed), proprietary trust-layer implementation (not disclosed) source; unpublished research; operational secrets |
 | **Evaluation (partner-facing)** | Curated documentation, declarative JSON schemas, contractual placeholders, integrity manifests |
 
 The boundary is enforced by **explicit whitelist enumeration**, not by directory-level trust or recursive copy.
@@ -47,7 +47,7 @@ The boundary is enforced by **explicit whitelist enumeration**, not by directory
 
 - **Human name:** SentriOps Partner Evaluation v1.0
 - **Semantic version:** `partner-eval-1.0.0`
-- **Scope (v1.0):** Option A — Pure Documentation/Research Review (26 authorized origin paths)
+- **Scope (v1.0):** Option A â€” Pure Documentation/Research Review (26 authorized origin paths)
 
 ### 3.3 Three-Layer Integrity Model
 
@@ -70,7 +70,7 @@ External evaluation artifacts are assembled in an **isolated clean-room workspac
 3. It conflates development provenance with evaluation provenance.
 4. It bypasses the `REQUIRES_DESIGN_DECISION` gate that forces explicit scope declaration.
 
-**Absence from the whitelist is a valid block**, not a defect to override. When no binary pipeline is defined, the governance-correct action is Option A documental delivery—not inference of compile inputs from the development tree.
+**Absence from the whitelist is a valid block**, not a defect to override. When no binary pipeline is defined, the governance-correct action is Option A documental deliveryâ€”not inference of compile inputs from the development tree.
 
 ---
 
@@ -90,9 +90,9 @@ Unresolved OQ gates permit the program to remain in non-delivery states without 
 The CEB state machine prioritizes **governance completeness over execution velocity**:
 
 ```
-DESIGN_READY_FOR_BUILD → AUTHORIZATION_READY_FOR_BUILD
-  → READY_FOR_PACKAGE_ASSEMBLY → BUILD_VALIDATED
-  → READY_FOR_EXTERNAL_REVIEW → APPROVED_FOR_DELIVERY
+DESIGN_READY_FOR_BUILD â†’ AUTHORIZATION_READY_FOR_BUILD
+  â†’ READY_FOR_PACKAGE_ASSEMBLY â†’ BUILD_VALIDATED
+  â†’ READY_FOR_EXTERNAL_REVIEW â†’ APPROVED_FOR_DELIVERY
 ```
 
 Blocking states (`REQUIRES_DESIGN_DECISION`, `BLOCKED_PENDING_REMEDIATION`) are first-class citizens. As of 2026-06-30, the program occupies concurrent `AUTHORIZATION_READY_FOR_BUILD` and `REQUIRES_DESIGN_DECISION` following Phase 1 execution with whitelist pending.
@@ -109,10 +109,10 @@ The Sovereign Trust Fabric proposes:
 
 - **Trust Decision Unit (TDU):** Atomic unit pairing a critical decision with minimum evidence package.
 - **`DecisionTrust(D,t)`:** Composition of eight falsifiable predicates with fail-closed semantics.
-- **SARP protocol:** Sovereign Adversary Resilience Protocol — meta-audit layer for trust continuity.
-- **SARP-OMEGA v1.0:** Theoretical extension (frozen 2026-06-29); not validated by PR #43 empirical scope.
+- **SARP protocol:** Sovereign Adversary Resilience Protocol â€” meta-audit layer for trust continuity.
+- **extended governance evaluation model (theoretical) v1.0:** Theoretical extension (frozen 2026-06-29); not validated by PR #43 empirical scope.
 
-Empirical evidence (PR #43, SHA `50969f5`, 300 pytest) covers sandbox-modeled vectors. SARP-OMEGA theoretical work (340 additional pytest locally) is documented as exploratory and **not** included in formal closure claims.
+Empirical evidence (PR #43, SHA `50969f5`, 300 pytest) covers sandbox-modeled vectors. extended governance evaluation model (theoretical) theoretical work (340 additional pytest locally) is documented as exploratory and **not** included in formal closure claims.
 
 See [`ARCHITECTURE.md`](./ARCHITECTURE.md) and [`LIMITATIONS.md`](./LIMITATIONS.md).
 
@@ -134,7 +134,7 @@ This paper and the CEB v1 package it accompanies do not demonstrate a shipped pr
 2. Execution (build, compile, deliver) is conditional on human and automated gates.
 3. **Non-execution is a valid terminal posture** when design decisions, whitelist entries, or open questions remain unresolved.
 
-As of 2026-06-30, the CEB v1 design freeze cycle is **CLOSED**. The program occupies concurrent states `AUTHORIZATION_READY_FOR_BUILD` and `REQUIRES_DESIGN_DECISION` (whitelist pending). Phase 1 clean-room preparation **executed**; Adversarial Audit V2 **review completed**. Manifest generation, full assembly, automated gating, and delivery authorization remain future transitions—each requiring its own evidence chain.
+As of 2026-06-30, the CEB v1 design freeze cycle is **CLOSED**. The program occupies concurrent states `AUTHORIZATION_READY_FOR_BUILD` and `REQUIRES_DESIGN_DECISION` (whitelist pending). Phase 1 clean-room preparation **executed**; Adversarial Audit V2 **review completed**. Manifest generation, full assembly, automated gating, and delivery authorization remain future transitionsâ€”each requiring its own evidence chain.
 
 The absence of a delivered ZIP is not a project failure. It is the correct output of a governance-first model operating under Option A scope with four open gates (OQ-1, OQ-3, OQ-4, OQ-5) and pending whitelist finalization.
 
@@ -152,4 +152,4 @@ The absence of a delivered ZIP is not a project failure. It is the correct outpu
 
 ---
 
-_PAPER.md — SentriOps CEB v1 — David Baldizon, 2026-06-30_
+_PAPER.md â€” SentriOps CEB v1 â€” David Baldizon, 2026-06-30_

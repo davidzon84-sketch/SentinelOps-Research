@@ -1,7 +1,7 @@
-# Execution Trace Model
+﻿# Execution Trace Model
 
 **Boundary:** Controlled Evaluation Boundary v1  
-**Document type:** Audit Evidence — State Transition Trace Specification  
+**Document type:** Audit Evidence â€” State Transition Trace Specification  
 **Date:** 2026-06-30  
 **CEB v1 cycle:** CLOSED
 
@@ -77,9 +77,9 @@ actor: human
 actor_identity: Security Release Engineer
 evidence_refs:
   - type: execution_report
-    path: partner-release/reports/PHASE_1_EXECUTION_REPORT.md
+    path: [internal record — not published]
 decision_gate: null
-notes: Phase 1 clean-room preparation initiated
+notes: Boundary preparation milestone clean-room preparation initiated
 ```
 
 ### Trace TR-20260630-004
@@ -95,7 +95,7 @@ evidence_refs:
   - type: phase_report
     path: 03_CLEAN_ROOM_PIPELINE/PHASE_1.md
 decision_gate: null
-notes: Phase 1 EXECUTED — 6 skeleton files; no compile/ZIP; concurrent REQUIRES_DESIGN_DECISION
+notes: Boundary preparation milestone EXECUTED â€” 6 skeleton files; no compile/ZIP; concurrent REQUIRES_DESIGN_DECISION
 ```
 
 ### Trace TR-20260630-005
@@ -125,7 +125,7 @@ actor: human
 actor_identity: Security Release Architect
 evidence_refs:
   - type: audit_protocol
-    path: partner-release/PARTNER_SECURITY_AUDIT_V2/ADVERSARIAL_AUDIT_V2_FINAL_CRITERIA.md
+    path: [internal record — not published]
 decision_gate: V2
 notes: Adversarial Audit V2 review COMPLETED; FC-03 PASS; artifact items PENDING
 ```
@@ -143,7 +143,7 @@ evidence_refs:
   - type: governance_doc
     path: `ceb-documentation-bundle/` (research mirror) (28-file package)
 decision_gate: null
-notes: CEB v1 cycle CLOSED — multi-publication documentation package finalized
+notes: CEB v1 cycle CLOSED â€” multi-publication documentation package finalized
 ```
 
 ---
@@ -192,7 +192,7 @@ evidence_required:
 from_state: BUILD_VALIDATED
 to_state: READY_FOR_EXTERNAL_REVIEW
 evidence_required:
-  - partner_release_gate.py exit 0
+  - structural validation gate attestation (conceptual)
   - V2 artifact verification (no CRITICAL/HIGH)
 ```
 
@@ -212,10 +212,10 @@ evidence_required:
 
 ## 6. Trace Integrity Rules
 
-1. **No retroactive traces** — reconstructed traces require `reconstructed: true`.
-2. **Hash chain** — new Release ID on remediation; prior traces archived.
-3. **Actor attribution** — automation cites tool + version; human cites role + name.
-4. **Blocking traces** — `BLOCKED_PENDING_REMEDIATION` requires `failure_reason`.
+1. **No retroactive traces** â€” reconstructed traces require `reconstructed: true`.
+2. **Hash chain** â€” new Release ID on remediation; prior traces archived.
+3. **Actor attribution** â€” automation cites tool + version; human cites role + name.
+4. **Blocking traces** â€” `BLOCKED_PENDING_REMEDIATION` requires `failure_reason`.
 
 ---
 
@@ -233,12 +233,12 @@ evidence_required:
 | Question | Trace element |
 |----------|---------------|
 | Who authorized Option A? | TR-20260630-002, OQ-6 |
-| Was Phase 1 executed? | TR-20260630-004 → yes |
+| Was Boundary preparation milestone executed? | TR-20260630-004 â†’ yes |
 | Was compilation executed? | TR-20260630-004 notes: no |
-| Is whitelist finalized? | TR-20260630-005 → pending |
-| Is V2 review complete? | TR-20260630-006 → yes |
-| Is delivery authorized? | TR-PENDING-011 not executed → **No** |
+| Is whitelist finalized? | TR-20260630-005 â†’ pending |
+| Is V2 review complete? | TR-20260630-006 â†’ yes |
+| Is delivery authorized? | TR-PENDING-011 not executed â†’ **No** |
 
 ---
 
-_Execution Trace Model — CEB v1 — 2026-06-30_
+_Execution Trace Model â€” CEB v1 â€” 2026-06-30_

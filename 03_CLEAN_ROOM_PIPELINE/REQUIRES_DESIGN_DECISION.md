@@ -1,9 +1,9 @@
-# REQUIRES_DESIGN_DECISION — Blocking State Reference
+﻿# REQUIRES_DESIGN_DECISION â€” Blocking State Reference
 
 **Boundary:** Controlled Evaluation Boundary v1  
-**Document type:** Clean-Room Pipeline — Design Decision Gate  
+**Document type:** Clean-Room Pipeline â€” Design Decision Gate  
 **Date:** 2026-06-30  
-**Current status:** **ACTIVE** — whitelist pending; OQ-1 OPEN
+**Current status:** **ACTIVE** â€” whitelist pending; OQ-1 OPEN
 
 ---
 
@@ -33,12 +33,12 @@ This state is **not an error**. It is the mechanism by which the boundary model 
 | Behavior | Valid? |
 |----------|--------|
 | Remain blocked indefinitely | **Yes** |
-| Execute recursive repo copy to "unblock" | **No — prohibited** |
-| Infer compile inputs from trust-fabric/ tree | **No — prohibited** |
-| Ship legacy v1.22.0 artifact as workaround | **No — prohibited** |
-| Document research-only package (Option A) | **Yes — permitted** |
-| Execute Phase 1 clean-room preparation | **Yes — executed 2026-06-30** |
-| Request SRO decision on open questions | **Yes — required** |
+| Execute recursive repo copy to "unblock" | **No â€” prohibited** |
+| Infer compile inputs from proprietary trust-layer implementation/ tree | **No â€” prohibited** |
+| Ship legacy v1.22.0 artifact as workaround | **No â€” prohibited** |
+| Document research-only package (Option A) | **Yes â€” permitted** |
+| Execute Phase 1 clean-room preparation | **Yes â€” executed 2026-06-30** |
+| Request SRO decision on open questions | **Yes â€” required** |
 
 ---
 
@@ -69,10 +69,10 @@ Program entered `REQUIRES_DESIGN_DECISION`.
 
 | Decision | Authority | Date | Status |
 |----------|-----------|------|--------|
-| Option A — Pure Documentation/Research Review | David Baldizon (SRO) | 2026-06-30 | OQ-6 **CLOSED** |
+| Option A â€” Pure Documentation/Research Review | David Baldizon (SRO) | 2026-06-30 | OQ-6 **CLOSED** |
 | Phase 1 clean-room preparation | Security Release Engineer | 2026-06-30 | **EXECUTED** |
 | 26-route whitelist proposed | Security Release Architect | 2026-06-30 | **PENDING** SRO confirmation |
-| OQ-1 identity supersession | — | — | **OPEN** |
+| OQ-1 identity supersession | â€” | â€” | **OPEN** |
 
 ### 5.3 Current Posture
 
@@ -92,7 +92,7 @@ Phase 1 execution **does not** exit `REQUIRES_DESIGN_DECISION`. Whitelist finali
 
 Before whitelist finalization, **the absence of an authoritative file enumeration is the correct blocking reason**. Operators must not copy development repository content beyond Phase 1 contractual skeleton without explicit per-file authorization.
 
-**Key principle:** Pending whitelist → do not expand assembly scope. Do not default to full tree or recursive subtree.
+**Key principle:** Pending whitelist â†’ do not expand assembly scope. Do not default to full tree or recursive subtree.
 
 ---
 
@@ -145,4 +145,4 @@ DELIVERY:                 NOT AUTHORIZED
 
 ---
 
-_REQUIRES_DESIGN_DECISION Reference — CEB v1 — 2026-06-30_
+_REQUIRES_DESIGN_DECISION Reference â€” CEB v1 â€” 2026-06-30_

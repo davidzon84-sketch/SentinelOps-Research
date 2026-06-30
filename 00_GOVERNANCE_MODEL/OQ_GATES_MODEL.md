@@ -1,7 +1,7 @@
-# CEB v1 Open Question (OQ) Gates Model
+﻿# CEB v1 Open Question (OQ) Gates Model
 
 **Boundary:** Controlled Evaluation Boundary v1  
-**Document type:** Governance — Decision Gate Framework  
+**Document type:** Governance â€” Decision Gate Framework  
 **Date:** 2026-06-30  
 **Security Release Owner:** David Baldizon  
 **CEB v1 cycle:** CLOSED
@@ -20,7 +20,7 @@ Open Questions (OQ) are **explicit decision gates** that block specific state tr
 |------------|-----------|-----------|
 | **OQ Gate** | Human decision register | SRO/IP Owner documented answer |
 | **Design Gate** | Whitelist + scope freeze | File-level enumeration + SRO sign-off |
-| **Automated Gate** | `partner_release_gate.py` | Exit code 0 |
+| **Automated Gate** | `structural validation gate (conceptual)` | Exit code 0 |
 | **Adversarial Gate** | Audit V2 checklist | No CRITICAL/HIGH blockers |
 | **Authorization Gate** | `APPROVAL_RECORD.md` | SRO sign-off |
 
@@ -35,7 +35,7 @@ OQ gates operate **upstream** of automated and adversarial gates. Unresolved OQ 
 | ID | Question | Decision | Date | Impact |
 |----|----------|----------|------|--------|
 | **OQ-2** | Who is Security Release Owner? | **David Baldizon**, Project Owner | 2026-06-30 | Approval authority chain |
-| **OQ-6** | Structure-only vs binaries in first delivery? | **Option A** — documental v1.0; binaries deferred to `-v2` | 2026-06-30 | Scope, Phase 2 path |
+| **OQ-6** | Structure-only vs binaries in first delivery? | **Option A** â€” documental v1.0; binaries deferred to `-v2` | 2026-06-30 | Scope, Phase 2 path |
 
 ### 3.2 Open Questions
 
@@ -46,11 +46,11 @@ OQ gates operate **upstream** of automated and adversarial gates. Unresolved OQ 
 | **OQ-4** | Include manifest cryptographic signature in v1.0? | `RELEASE_MANIFEST.json.sig` in package | Low | Ship without signature |
 | **OQ-5** | Is v1.0 without plugins acceptable to partner? | Plugin inclusion decision | Medium | Zero plugins (conservative default) |
 
-**Closed count:** 2 · **Open count:** 4
+**Closed count:** 2 Â· **Open count:** 4
 
 ---
 
-## 4. OQ Gate → State Mapping
+## 4. OQ Gate â†’ State Mapping
 
 | OQ status | Permitted maximum state | Rationale |
 |-----------|------------------------|-----------|
@@ -61,7 +61,7 @@ OQ gates operate **upstream** of automated and adversarial gates. Unresolved OQ 
 | OQ-4 open | `READY_FOR_EXTERNAL_REVIEW` | Signature optional; does not block review |
 | OQ-5 open | `APPROVED_FOR_DELIVERY` | Partner content confirmation required |
 
-**Current posture:** OQ-1 open → concurrent `AUTHORIZATION_READY_FOR_BUILD` + `REQUIRES_DESIGN_DECISION` is valid.
+**Current posture:** OQ-1 open â†’ concurrent `AUTHORIZATION_READY_FOR_BUILD` + `REQUIRES_DESIGN_DECISION` is valid.
 
 ---
 
@@ -80,7 +80,7 @@ Automated gate PASS does **not** close OQ gates.
 
 ## 6. Relationship to V2 Review
 
-Adversarial Audit V2 **review completed** (2026-06-30). FC-03 (SRO identified) **PASS** via OQ-2 closure. FC-19 through FC-21 (binary scope) reflect OQ-6 Option A — no binaries expected in v1.0.
+Adversarial Audit V2 **review completed** (2026-06-30). FC-03 (SRO identified) **PASS** via OQ-2 closure. FC-19 through FC-21 (binary scope) reflect OQ-6 Option A â€” no binaries expected in v1.0.
 
 Open OQs do not invalidate V2 review completion; they define remaining human gates before delivery authorization.
 
@@ -104,4 +104,4 @@ WHITELIST = PENDING (OQ-1 dependency)
 
 ---
 
-_OQ Gates Model — CEB v1 — 2026-06-30_
+_OQ Gates Model â€” CEB v1 â€” 2026-06-30_

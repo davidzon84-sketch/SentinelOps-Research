@@ -3,7 +3,7 @@
 **Field:** Description / Abstract  
 **Deposit type:** Documentation / Research Framework  
 **Date:** 2026-06-30  
-**License (deposit):** See [`LICENSE.md`](./LICENSE.md) â€” CC BY 4.0 recommended for archival record; GitHub mirror uses CC BY 4.0 per root [`LICENSE`](../LICENSE).
+**License (deposit):** CC BY-NC 4.0 — aligned with root [`LICENSE`](../LICENSE) and [`LICENSE.md`](./LICENSE.md).
 
 ---
 

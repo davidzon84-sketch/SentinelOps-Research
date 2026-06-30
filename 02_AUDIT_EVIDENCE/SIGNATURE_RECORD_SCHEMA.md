@@ -1,9 +1,9 @@
-# SIGNATURE_RECORD Schema
+﻿# SIGNATURE_RECORD Schema
 
 **Boundary:** Controlled Evaluation Boundary v1  
-**Document type:** Audit Evidence — Human Authorization Record Specification  
+**Document type:** Audit Evidence â€” Human Authorization Record Specification  
 **Date:** 2026-06-30  
-**Source template:** `partner-release/templates/SIGNATURE_RECORD.md`
+**Source template:** internal governance template (not published)
 
 ---
 
@@ -19,7 +19,7 @@ Authorization is **orthogonal** to SHA-256 integrity and optional manifest signa
 
 | Document | Location | Audience |
 |----------|----------|----------|
-| SIGNATURE_RECORD | `partner-release/reports/` or audit archive | Internal operations |
+| SIGNATURE_RECORD | `internal release governance archive/reports/` or audit archive | Internal operations |
 | APPROVAL_RECORD | `integrity/APPROVAL_RECORD.md` inside ZIP | External evaluator |
 
 Both must be coherent. SIGNATURE_RECORD may contain operational notes excluded from partner package.
@@ -53,7 +53,7 @@ Both must be coherent. SIGNATURE_RECORD may contain operational notes excluded f
 
 Fixed declaration text (hash substituted at signing):
 
-> Autorizo la liberación del artefacto de evaluación identificado bajo el hash **[HASH]** tras verificar que cumple con los criterios de no-exposición, ausencia de secretos y alineación con la política de mínima superficie de ataque del CEB v1.
+> Autorizo la liberaciÃ³n del artefacto de evaluaciÃ³n identificado bajo el hash **[HASH]** tras verificar que cumple con los criterios de no-exposiciÃ³n, ausencia de secretos y alineaciÃ³n con la polÃ­tica de mÃ­nima superficie de ataque del CEB v1.
 
 English equivalent accepted for international review:
 
@@ -66,7 +66,7 @@ English equivalent accepted for international review:
 | Field | Type | Required | Constraints |
 |-------|------|----------|-------------|
 | `signature_type` | enum | Yes | `digital`, `physical` |
-| `public_key_reference` | string | If digital | Reference only — **no private key** |
+| `public_key_reference` | string | If digital | Reference only â€” **no private key** |
 | `signature_payload` | string | Yes | Signature or archival reference |
 | `signature_timestamp_utc` | ISO 8601 | Yes | UTC mandatory |
 
@@ -85,7 +85,7 @@ All must be checked before signing:
 | # | Precondition | Field |
 |---|--------------|-------|
 | 1 | BUILD_RECORD complete | `preconditions.build_record: true` |
-| 2 | partner_release_gate.py exit 0 | `preconditions.gate_exit_0: true` |
+| 2 | structural validation gate attestation (conceptual) | `preconditions.gate_exit_0: true` |
 | 3 | V2 audit no CRITICAL/HIGH | `preconditions.v2_clean: true` |
 | 4 | DELIVERY_MANIFEST zip hash verified | `preconditions.delivery_hash: true` |
 | 5 | Scope option documented | `preconditions.scope_documented: true` |
@@ -130,10 +130,10 @@ notes: [optional bounded text]
 | Field | Status |
 |-------|--------|
 | SRO designated | Yes (OQ-2 closed) |
-| SIGNATURE_RECORD completed | **No** — pending gate + audit |
-| APPROVAL_RECORD in package | **No** — not yet generated |
+| SIGNATURE_RECORD completed | **No** â€” pending gate + audit |
+| APPROVAL_RECORD in package | **No** â€” not yet generated |
 | Delivery authorized | **No** |
 
 ---
 
-_SIGNATURE_RECORD Schema — CEB v1 — 2026-06-30_
+_SIGNATURE_RECORD Schema â€” CEB v1 â€” 2026-06-30_

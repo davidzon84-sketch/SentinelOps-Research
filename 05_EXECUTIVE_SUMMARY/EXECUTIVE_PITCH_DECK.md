@@ -3,7 +3,7 @@
 **Audience:** CISOs, cloud architects, Microsoft Research reviewers, AWS/Azure security programs  
 **Format:** Slide-by-slide markdown (speaker notes optional)  
 **Date:** 2026-06-30  
-**License:** CC BY 4.0 (consistent with repository root)
+**License:** CC BY-NC 4.0 (consistent with repository root)
 
 > **Usage:** Present as governance and research framing only. No product demo, no implementation roadmap, no compliance certification claims.
 
