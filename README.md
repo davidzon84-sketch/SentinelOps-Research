@@ -1,107 +1,150 @@
 ﻿# SentinelOps Research — Controlled Evaluation Boundary (CEB) v1
 
-**Repository type:** Public research and governance documentation mirror  
-**Release line (reference):** SentriOps Partner Evaluation v1.0 (`partner-eval-1.0.0`, provisional)  
+[![Research Artifact](https://img.shields.io/badge/Type-Research%20Artifact-blue)](#what-this-is)
+[![Governance](https://img.shields.io/badge/Focus-Governance%20%26%20Auditability-green)](#high-level-architecture)
+[![Non-Executable](https://img.shields.io/badge/Execution-Non--Executable%20by%20Design-orange)](#non-execution-as-a-valid-security-state)
+
 **Version date:** 2026-06-30  
-
-This repository is **not** a software product distribution. It publishes the **Controlled Evaluation Boundary (CEB) v1** documentation bundle: governance models, research framing, audit-evidence schemas, clean-room pipeline semantics, Zenodo metadata, and executive briefs. External readers can evaluate the **research and release-governance posture** without access to proprietary implementation code.
-
----
-
-## What problem CEB addresses
-
-Organizations that study **trust continuity**—how systems justify decisions when initial security assumptions degrade—need a way to share **research and governance artifacts** with external reviewers (partners, cloud security programs, academic archives) while **excluding** product source, secrets, customer data, and unreviewed binaries.
-
-CEB v1 treats that separation as a **first-class architectural boundary**, not an afterthought.
+**License:** [CC BY 4.0](LICENSE)
 
 ---
 
-## System architecture (conceptual)
+## Why "when not to execute" matters as much as execution
 
-CEB is a **documentation-only evaluation perimeter** around trust-continuity research. It does not describe or ship a runnable application from this mirror.
+Most security and release practice optimizes for *doing*: compile, package, deploy, deliver. Less often do organizations treat **withholding execution** as a deliberate, auditable, and correct outcome. Yet in complex supply chains—where review scope is incomplete, trust assumptions degrade, or intellectual-property boundaries forbid conventional code sharing—the rush to execute can be the highest-risk move available.
 
-| Layer | Role in CEB v1 |
-|-------|----------------|
-| **Governance model** | Authorization states, open-question gates, and explicit human sign-off before any external delivery |
-| **Research corpus** | Formal paper structure, limitations, and architecture narrative at the **research** level (not implementation) |
-| **Audit evidence** | Schemas for build records, signatures, SHA-256 manifests, and execution traces—**templates**, not live operational logs |
-| **Clean-room pipeline** | Whitelist-only ingress into an isolated assembly workspace; no recursive copy of proprietary trees |
-| **Publication metadata** | Fields intended for Zenodo deposit and citation |
-| **Executive summaries** | Non-technical and cloud-security-oriented briefs for program stakeholders |
+The **Controlled Evaluation Boundary (CEB)** is a research and governance model that makes that choice explicit. CEB asks a systems-level question: *under what documented conditions may an artifact transition from "designed" to "validly executable" or "authorized for external delivery"?* When those conditions are not met, **stopping is success**—not stall.
 
-**Proprietary evaluation engines** (internal risk, approval, or trust-runtime components) are **out of scope** for this mirror. The bundle explains *how release decisions are gated*, not *how product code is implemented*.
+This repository publishes the CEB v1 documentation bundle for academic review, cloud security program discussion, and archival citation. It is **not** a software product, **not** open-source application code, and **not** a deployment guide.
+
+---
+
+## What this is
+
+A **public research mirror** of governance models, research framing, audit-evidence schemas, publication metadata, and executive briefs. External readers can evaluate **how release and execution decisions are gated** without access to proprietary implementation, customer data, secrets, or unreviewed binaries.
+
+| This repository **is** | This repository **is not** |
+|------------------------|----------------------------|
+| A governance-first execution-control model for research externalization | A runnable product or installer |
+| Documentation of authorization states, gates, and audit templates | Source code for operational systems |
+| An honest research artifact with stated limitations | A compliance certification or security guarantee |
+| A citable contribution to systems and cloud security discourse | Marketing collateral or partner delivery package |
+
+---
+
+## High-level architecture
+
+CEB organizes external research sharing around four conceptual planes. None of these planes ship executable product code from this mirror.
 
 ```
-  [ Private development & product code ]     (never in this repo )
-              |
-              |  whitelist-only, human-gated
-              v
-  [ CEB v1 documentation bundle ]  ------>  Zenodo (frozen DOI snapshot)
-              |
-              +-------------------------->  GitHub (living governance reference)
+  [ Private development & proprietary implementation ]   (never published here)
+                          |
+                          |  explicit boundary crossing only
+                          v
+  +---------------- Controlled Evaluation Boundary ----------------+
+  |  Governance  →  Boundary  →  Isolated assembly  →  Evidence   |
+  |  (authorization, gates, states)   (scope control)   (audit)   |
+  +----------------------------------------------------------------+
+                          |
+            +-------------+-------------+
+            v                           v
+     Zenodo (frozen DOI)          GitHub (living reference)
 ```
 
----
+| Plane | Purpose |
+|-------|---------|
+| **Governance** | Authorization states, open-question gates, and explicit human sign-off before any external delivery |
+| **Boundary** | Scope control that defines what may cross from private development into an external-facing evaluation perimeter |
+| **Isolated assembly** | Separation between day-to-day development and any documentation prepared for external review |
+| **Evidence** | Templates for integrity records, provenance attribution, and human approval—schemas, not live operational logs |
 
-## Non-execution as a valid state
-
-CEB v1 encodes a deliberate principle:
-
-> **Choosing not to build, compile, package, or deliver is a correct and often preferred security outcome** when boundary preconditions, open questions, or whitelist entries are incomplete.
-
-Phase 1 clean-room preparation may complete **without** producing binaries or partner ZIPs. Open governance items (see `00_GOVERNANCE_MODEL/`) can keep **delivery unauthorized** while design and review continue. That posture is **success**, not stall.
-
-See [`00_GOVERNANCE_MODEL/STATE_MACHINE.md`](./00_GOVERNANCE_MODEL/STATE_MACHINE.md).
+**Proprietary evaluation engines** and product runtime components are **out of scope**. The bundle explains *when and whether execution or delivery is authorized*, not *how product logic is implemented*.
 
 ---
 
-## Repository layout (28 documents)
+## Non-execution as a valid security state
 
-| Directory | Focus |
-|-----------|---------|
-| [`00_GOVERNANCE_MODEL/`](./00_GOVERNANCE_MODEL/) | Authorization model, state machine, OQ gates, design decisions |
-| [`01_RESEARCH_PAPER/`](./01_RESEARCH_PAPER/) | Research paper sections (STF / trust-continuity framing) |
-| [`02_AUDIT_EVIDENCE/`](./02_AUDIT_EVIDENCE/) | Evidence and trace **schemas** |
-| [`03_CLEAN_ROOM_PIPELINE/`](./03_CLEAN_ROOM_PIPELINE/) | Phase 1 executed, Phase 2 pending, whitelist policy |
-| [`04_METADATA_ZENODO/`](./04_METADATA_ZENODO/) | Deposit title, authors, keywords, version, license notes |
-| [`05_EXECUTIVE_SUMMARY/`](./05_EXECUTIVE_SUMMARY/) | Microsoft Research, AWS Security, and non-technical briefs |
+CEB encodes a deliberate principle:
+
+> **Choosing not to build, compile, package, or deliver is a correct and often preferred security outcome** when boundary preconditions, open questions, or authorized scope entries are incomplete.
+
+Preparation may complete **without** producing binaries or partner deliverables. Open governance items can keep **delivery unauthorized** while design and review continue. Automated checks passing does not imply delivery approval. Human accountability remains orthogonal to tooling.
+
+That posture is **governance working as designed**—not a blocked program.
+
+---
+
+## Governance, auditability, and control boundaries
+
+CEB treats three concerns as **separable layers**, not interchangeable signals:
+
+1. **Integrity** — whether documented content matches recorded expectations  
+2. **Provenance** — who attested to generation or assembly (where applicable)  
+3. **Authorization** — whether a accountable decision-maker permits external delivery  
+
+Conflating these layers weakens evaluator independence and mirrors a common failure mode in cloud release pipelines: treating artifact checksums, code signing, and change approval as a single implicit "green light."
+
+Additional governance properties:
+
+- **Fail-closed transitions** — ambiguous or incomplete preconditions block progression toward delivery  
+- **Open-question gates** — explicit human decisions required before scope expansion  
+- **Concurrent blocking states permitted** — authorization model completeness does not imply delivery readiness  
+- **Honest limitation disclosure** — no claims of certification, breach prevention, or product readiness  
+
+---
+
+## Bundle contents (conceptual)
+
+The mirror includes governance models, research paper sections, audit-evidence schemas, clean-room pipeline semantics (research level only), Zenodo deposit metadata, and executive briefs oriented toward research and cloud security audiences. Detailed inventories live inside the bundle; this README does not enumerate operational paths or assembly procedures.
 
 ---
 
 ## Dual publication: Zenodo + GitHub
 
-| Channel | Purpose |
-|---------|---------|
+| Channel | Role |
+|---------|------|
 | **Zenodo** | Versioned, citable archive (DOI) of a **frozen** documentation snapshot |
-| **GitHub** | Traceability for governance evolution, open-question resolution, and gate artifacts |
+| **GitHub** | Living governance reference for gate evolution, open-question resolution, and traceability |
 
-Neither channel alone **authorizes** partner delivery. Human Security Release Owner sign-off and closed gates remain required. Details: [`04_METADATA_ZENODO/`](./04_METADATA_ZENODO/) and governance docs in `00_GOVERNANCE_MODEL/`.
+**Zenodo DOI:** `[PENDING — assign at deposit]`  
+*(Placeholder — update when DOI is assigned.)*
 
-**License (this mirror):** See root [`LICENSE`](./LICENSE) (CC BY-NC 4.0). Zenodo deposit license notes may reference CC BY 4.0 for the archival record—reconcile at deposit time with [`04_METADATA_ZENODO/LICENSE.md`](./04_METADATA_ZENODO/LICENSE.md).
-
----
-
-## What this repository explicitly excludes
-
-- Product application source code and installers  
-- Runnable services, plugins, or evaluation binaries (v1.0 is documentation-only; Option A)  
-- Secrets, credentials, customer data, or internal operational paths  
-- Claims of certification, compliance attestation, SIEM/EDR replacement, or breach prevention guarantees  
-
-Honest limitations: [`01_RESEARCH_PAPER/LIMITATIONS.md`](./01_RESEARCH_PAPER/LIMITATIONS.md).
+**GitHub strategy:** This repository holds the evolving governance and research documentation mirror. Zenodo receives an immutable snapshot suitable for citation; GitHub preserves commit-level traceability for reviewers who need current gate status. **Neither channel alone authorizes partner delivery**—human sign-off and closed gates remain required.
 
 ---
 
-## Program status snapshot (2026-06-30)
+## Program status (snapshot)
 
-Governance design for CEB v1 is **closed** at the documentation level; **delivery to external partners is not authorized** while selected open questions remain. Treat status tables inside the bundle as authoritative for gate IDs (OQ-1 through OQ-6).
+Governance design for CEB v1 is documented at the research level; **external partner delivery is not authorized** while selected open questions remain unresolved. Treat status disclosures inside the bundle as authoritative for current gate posture.
 
 ---
 
 ## Citation
 
-When citing this work, prefer the Zenodo DOI once assigned ([`04_METADATA_ZENODO/DOI_PLACEHOLDER.md`](./04_METADATA_ZENODO/DOI_PLACEHOLDER.md)). Until then, cite this GitHub repository and commit SHA.
+When citing this work, prefer the Zenodo DOI once assigned. Until then:
+
+> Baldizon, D. (2026). *Controlled Evaluation Boundary: A Governance-First Model for When Systems Become Validly Executable* (CEB v1 documentation package). SentinelOps Research. DOI pending.
 
 ---
 
-_SentinelOps Research — CEB v1 public documentation mirror._
+## License and IP notice
+
+This mirror is licensed under [CC BY 4.0](LICENSE). Zenodo deposit metadata may reference CC BY 4.0 for the archival record—reconcile at deposit time with publication metadata in the bundle.
+
+Deposit and publication of this documentation **do not**:
+
+- Release proprietary product source code  
+- Grant deployment rights or partner delivery authorization  
+- Constitute regulatory certification or compliance attestation  
+
+---
+
+## For reviewers and architects
+
+**Researchers** — evaluate the state-machine semantics, non-execution framing, and reproducibility of the governance pattern under IP constraints.  
+**Cloud security architects (Azure, AWS, and analogous programs)** — compare boundary, authorization, and audit-trail concepts to landing-zone policy, IAM scope control, and supply-chain integrity narratives at the **conceptual** level only.  
+**CISOs and program owners** — use executive briefs in the bundle for stakeholder alignment without assuming product availability.
+
+---
+
+_SentinelOps Research — CEB v1 public documentation mirror. Research artifact only; not deployable software._
